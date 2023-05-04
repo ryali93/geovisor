@@ -33,3 +33,9 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
+
+.fullWidth{
+  height: 100%;
+  position: relative;
+}

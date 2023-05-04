@@ -1,0 +1,15 @@
+.closed{
+    width:0;
+    background: red;
+    transition: width 2s ease;
+}
+
+.tab-pane{
+    width:100%;
+    transition: width 2s ease;
+}
+
+.opened{
+    width: 100%;
+    transition: width 2s ease;
+}

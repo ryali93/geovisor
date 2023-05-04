@@ -1,0 +1,9 @@
+.sidebar {
+    position: fixed;
+    top: 20;
+    left: 0px;
+    
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
