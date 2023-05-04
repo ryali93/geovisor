@@ -16,13 +16,7 @@ export class MapComponent implements OnInit{
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
         maxZoom: 18, 
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-      }),
-      L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
-        layers: 'ne:gpo_countries',
-        format: 'image/png',
-        transparent: true,
-        version: '1.1.1'
-      })
+    })
     ],
     zoom: 5,
     center: L.latLng(-10, -75)
