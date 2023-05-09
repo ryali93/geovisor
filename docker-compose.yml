@@ -5,26 +5,26 @@ services:
     volumes:
       - postgis-data:/var/lib/postgresql
     environment:
-      - POSTGRES_DB=db
+      - POSTGRES_DBNAME=db
       - POSTGRES_USER=postgres
       - POSTGRES_PASS=postgres
       - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology,postgis_raster,pgrouting
       - RUN_AS_ROOT=true
     ports:
-      - 5432:5432
+      - "0.0.0.0:5432:5432"
     restart: on-failure
 
   geoserver:
     image: geosolutionsit/geoserver
     ports:
-      - 8080:8080
+      - "0.0.0.0:8080:8080"
     environment:
       GEOSERVER_ADMIN_PASSWORD: ${GEOSERVER_ADMIN_PASS}
 
   frontend:
     build: ./frontend
     ports:
-      - 4200:4200
+      - "0.0.0.0:4200:4200"
     command: npx ng serve --host 0.0.0.0
 
 volumes:
