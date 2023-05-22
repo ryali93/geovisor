@@ -1,17 +1,10 @@
 <app-header></app-header>
-<!-- <div class="wrapper"> -->
-  <div class="container-fluid">
-    <div class="row">
-      <!-- SIDEBAR -->
-      <div class="col-md-3 bg-light" *ngIf="sidebarVisible" >
-        <!-- <app-sidebar></app-sidebar> -->
-        <app-tab-container></app-tab-container>
-      </div>
-      <!-- MAP -->
-      <div class="col-md-9" [ngClass]="{'fullWidth': !sidebarVisible, 'col-md-9':sidebarVisible}">
-          <app-map></app-map>
-      </div>
-    </div>
+<div class="main-content">
+  <div class="sidebar" *ngIf="sidebarVisible">
+    <app-tab-container></app-tab-container>
   </div>
-<!-- </div> -->
+  <div class="map-container" [ngClass]="{'full-width': !sidebarVisible}">
+    <app-map></app-map>
+  </div>
+</div>
 <app-footer></app-footer>

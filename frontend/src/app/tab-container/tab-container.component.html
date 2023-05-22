@@ -1,13 +1,4 @@
-<ul class="nav nav-tabs">
-    <li *ngFor="let tab of tabs" (click)="activeTab = tab" class="d-flex align-items-center mr-2">
-      <a href="javascript:void(0)">
-        <fa-icon [icon]="tab.icon" class="fa-2x mb-1 mt-1"></fa-icon>
-    </a>
-    </li>
-  </ul>
-  
-  <div class="tab-content">
-    <app-tab *ngFor="let tab of tabs" [isActive]="activeTab === tab" [icon]="tab.icon" [buttonText]="tab.buttonText" >
-        
-    </app-tab>
-  </div>
+<div class="tab-content">
+  <app-tab *ngFor="let tab of tabs" [isActive]="activeTab === tab" [icon]="tab.icon" [buttonText]="tab.buttonText" >
+  </app-tab>
+</div>
