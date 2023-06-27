@@ -34,23 +34,6 @@ h3 {
   margin-bottom: 5px;
 }
 
-#map {
-  position: absolute;
-  background-color: #ddd;
-  top: 72px;
-  left: 0;
-  right: 370px;
-  bottom: 0;
-  z-index: 1000;
-  display: none;
-}
-
-#map > iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 #code {
   overflow: auto;
   position: absolute;
@@ -64,17 +47,6 @@ h3 {
   display: none;
 }
 
-#header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 72px;
-  z-index: 1700;
-  background-color: #175d93;
-  display: none;
-}
-
 #sidebar {
   position: absolute;
   overflow-x: hidden;
@@ -82,7 +54,7 @@ h3 {
   top: 72px;
   right: 0;
   bottom: 0;
-  width: 370px;
+  width: 350px;
   z-index: 1450;
   background: #f8f8f8;
   border-left: 1px solid #ccc;

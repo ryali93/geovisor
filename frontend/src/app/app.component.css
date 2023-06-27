@@ -39,3 +39,14 @@ html, body {
   height: 100%;
   position: relative;
 }
+
+.toolDiv {
+  position: absolute;
+  z-index: 401;
+}
+
+.map-container {
+  height: 80vh;
+  width: 100%;
+  position: relative; /* esto es necesario para que #map y .leaflet-container puedan utilizar la altura y ancho al 100% */
+}
