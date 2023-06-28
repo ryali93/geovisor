@@ -1,0 +1,56 @@
+.faIcon {
+    border: 1px solid white;
+}
+.block-right {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 25%);
+    -moz-box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 25%);
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+.load {
+    position: absolute;
+    z-index: 2000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgb(51,51,51);
+    text-align: center;
+}
+.load img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 44px;
+    margin: -44px 0 0 -100px;
+}
+
+
+// /* Listlayer */
+.height-6 {
+    height: 6vh;
+}
+
+.height-88 {
+    height: 88vh;
+}
+
+.height-100 {
+    height: 100vh;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+@media (max-width: 767.98px) {
+    .container-fluid.height-100 {
+      height: 100vh;
+    }
+}
+@media (min-width: 768px) {
+    .container-fluid.height-88 {
+      height: 88vh;
+    }
+}
+  

@@ -1,0 +1,63 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~leaflet/dist/leaflet.css';
+
+.widget-panel {
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    font-size: 1rem;
+  }
+.widget-heading {
+    background-color: #333333;
+    border-radius: 4px 4px 0 0;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+    padding: .75em 1em;
+  }
+.leaflet-panel-layers {
+    display: none;
+  }
+.widget-container {  
+    background-color: #FFFFFF;
+    background-clip: padding-box;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    border: 2px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    color: #333333;
+    position: absolute;
+    z-index: 401;
+    display: none;
+  }  
+.widget-container p {
+    margin: 0;  
+  }
+.toolDiv {
+    position: absolute;
+    z-index: 401;
+  }
+
+/* BEGIN - Scroll personalizado */
+.widget-container .widget-content::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.widget-container .widget-content::-webkit-scrollbar:vertical {
+  width:10px;
+}
+.widget-container .widget-content::-webkit-scrollbar-button:increment,
+.widget-container .widget-content::-webkit-scrollbar-button {
+  display: none;
+}
+.widget-container .widget-content::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+.widget-container .widget-content::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+.widget-container .widget-content::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+/* END - Scroll personalizado */

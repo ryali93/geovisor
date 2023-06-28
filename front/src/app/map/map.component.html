@@ -1,0 +1,12 @@
+<div id="map" class="map">
+    <!-- Widget ICON ListLayer -->
+    <div class="toolDiv toolIcon toolBasemap" (click)="onClickWidgetOpen('Widget_ListLayer')" 
+        placement="bottom" ngbTooltip="{{nls.toolTip.listLayer}}">
+        <img class="widgetIcon" [src]="imageLayers">
+    </div>
+    <!-- Widget ICON Basemap -->
+    <div class="toolDiv toolIcon toolListlayer" (click)="onClickWidgetOpen('Widget_BaseMap')" 
+        placement="bottom" ngbTooltip="{{nls.toolTip.baseMap}}">
+        <img class="widgetIcon" [src]="imageBasemap">
+    </div>
+</div>
