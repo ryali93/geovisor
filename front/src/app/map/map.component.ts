@@ -1,8 +1,11 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { EarthEngineService } from '../earth-engine.service';
 import { MapService } from '../map.service';
 import { SidebarService } from '../sidebar.service';
 import { nls } from './nls';
 import * as L from 'leaflet';
+import 'leaflet-draw/dist/leaflet.draw-src.js'; // add this
+import 'leaflet-draw';
 
 @Component({
   selector: 'app-map',
@@ -15,13 +18,14 @@ export class MapComponent implements OnDestroy, OnInit {
   public imageTidop:string;
   public iconTidop:string;
   public urlTidop:string;
+  public mapUrl: string="";
   public dataListLayer:any;
   public mapLeaflet:any;
   public nls = nls;
   public listWidget:Array<any> = [];
-
-
-  constructor(private MapService:MapService, private SidebarService:SidebarService) {
+  private drawnPolygon: any;
+  
+  constructor(private MapService:MapService, private SidebarService:SidebarService, private earthEngineService: EarthEngineService) {
     (window as any).initialize_zIndex = 401;
     this.imageLayers  = nls.icon.listLayer;
     this.imageBasemap = nls.icon.baseMap;
@@ -38,13 +42,56 @@ export class MapComponent implements OnDestroy, OnInit {
 
   initializeMap() {
     const MAP_CENTER = L.latLng(40.6518285, -4.6760404);
-    const MAP_ZOOM = 13;
-    this.mapLeaflet = L.map('map', { center: MAP_CENTER, zoom: 6, zoomControl: true }); 
+    const MAP_ZOOM = 10;
+    this.mapLeaflet = L.map('map', { center: MAP_CENTER, zoom: MAP_ZOOM, zoomControl: true }); 
     this.mapLeaflet.zoomControl.setPosition('bottomright');
     this.mapLeaflet.addLayer(L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
     }));
+
+    // Earth engine map
+    this.earthEngineService.getMapId().subscribe((url:any) => {
+      this.mapUrl = url;
+      console.log(this.mapUrl)
+      this.mapLeaflet.addLayer(L.tileLayer(this.mapUrl, {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        opacity: 0.5
+      }));
+    });
+
+    // Add draw toolbar
+    const drawControl = new (L.Control as any).Draw({
+      draw: {
+        polygon: true,
+        polyline: false,
+        circle: false,
+        rectangle: <any>{ showArea: false },
+        marker: false,
+        circlemarker: false
+      }
+    });
+    this.mapLeaflet.addControl(drawControl);
+
+    this.mapLeaflet.on('draw:created', (e: any) => {
+      const type = e.layerType;
+      const layer = e.layer;
+      // Si existe un polígono dibujado anteriormente, lo eliminamos
+      if (this.drawnPolygon) {
+        this.mapLeaflet.removeLayer(this.drawnPolygon);
+      }
+      // Agregamos el nuevo polígono al mapa y lo guardamos en this.drawnPolygon
+      this.mapLeaflet.addLayer(layer);
+      this.drawnPolygon = layer;
+
+      console.log(layer.getLatLngs());
+    });
+    
+
+
+    
+
   }
 
   onClickWidgetOpen(nameWidget:any) {
