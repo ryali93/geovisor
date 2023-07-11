@@ -1,1 +1,26 @@
-<p>sidebar works!</p>
+<nav>
+    <div class="nav nav-tabs device-small" id="nav-tab" role="tablist">
+        <a #explorerTab class="nav-link active" id="nav-home-tab" 
+            data-toggle="tab"
+            href="#nav-home" 
+            role="tab" 
+            aria-controls="nav-home" aria-selected="true">
+            Explorador
+        </a> 
+        <a class="nav-link" id="nav-profile-tab" 
+            data-toggle="tab"
+            href="#nav-profile" 
+            role="tab" 
+            aria-controls="nav-profile" 
+            aria-selected="false">
+            Acerca de
+        </a>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent" style="background-color: #e8f1f1 !important;">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="chart-container">
+            <canvas #indicesChart></canvas>
+        </div>
+    </div>
+</div>

@@ -51,15 +51,15 @@ export class MapComponent implements OnDestroy, OnInit {
     }));
 
     // Earth engine map
-    this.earthEngineService.getMapId().subscribe((url:any) => {
-      this.mapUrl = url;
-      console.log(this.mapUrl)
-      this.mapLeaflet.addLayer(L.tileLayer(this.mapUrl, {
-        maxZoom: 18,
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-        opacity: 0.5
-      }));
-    });
+    // this.earthEngineService.getMapId().subscribe((url:any) => {
+    //   this.mapUrl = url;
+    //   console.log(this.mapUrl)
+    //   this.mapLeaflet.addLayer(L.tileLayer(this.mapUrl, {
+    //     maxZoom: 18,
+    //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+    //     opacity: 0.5
+    //   }));
+    // });
 
     // Add draw toolbar
     const drawControl = new (L.Control as any).Draw({
@@ -77,21 +77,28 @@ export class MapComponent implements OnDestroy, OnInit {
     this.mapLeaflet.on('draw:created', (e: any) => {
       const type = e.layerType;
       const layer = e.layer;
-      // Si existe un polígono dibujado anteriormente, lo eliminamos
       if (this.drawnPolygon) {
         this.mapLeaflet.removeLayer(this.drawnPolygon);
       }
-      // Agregamos el nuevo polígono al mapa y lo guardamos en this.drawnPolygon
       this.mapLeaflet.addLayer(layer);
       this.drawnPolygon = layer;
 
       console.log(layer.getLatLngs());
+
+      const latLngs = layer.getLatLngs();
+      const area = latLngs[0].map((latLng: L.LatLng) => ([latLng.lng, latLng.lat]));
+      // this.earthEngineService.getMapId(JSON.stringify([area])).subscribe((result: any) => {
+      //   console.log(result);
+      //   this.mapLeaflet.addLayer(L.tileLayer(result, {
+      //     maxZoom: 18,
+      //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      //     opacity: 0.5
+      //   }));
+      // });
+      this.earthEngineService.getTimeSeries(JSON.stringify([area])).subscribe((result: any) => {
+        console.log(result);
+      });
     });
-    
-
-
-    
-
   }
 
   onClickWidgetOpen(nameWidget:any) {
