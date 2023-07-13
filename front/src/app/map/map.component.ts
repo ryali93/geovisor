@@ -50,18 +50,6 @@ export class MapComponent implements OnDestroy, OnInit {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
     }));
 
-    // Earth engine map
-    // this.earthEngineService.getMapId().subscribe((url:any) => {
-    //   this.mapUrl = url;
-    //   console.log(this.mapUrl)
-    //   this.mapLeaflet.addLayer(L.tileLayer(this.mapUrl, {
-    //     maxZoom: 18,
-    //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-    //     opacity: 0.5
-    //   }));
-    // });
-
-    // Add draw toolbar
     const drawControl = new (L.Control as any).Draw({
       draw: {
         polygon: true,
@@ -87,6 +75,7 @@ export class MapComponent implements OnDestroy, OnInit {
 
       const latLngs = layer.getLatLngs();
       const area = latLngs[0].map((latLng: L.LatLng) => ([latLng.lng, latLng.lat]));
+      this.MapService.sendArea(area);
       // this.earthEngineService.getMapId(JSON.stringify([area])).subscribe((result: any) => {
       //   console.log(result);
       //   this.mapLeaflet.addLayer(L.tileLayer(result, {
@@ -96,8 +85,16 @@ export class MapComponent implements OnDestroy, OnInit {
       //   }));
       // });
       this.earthEngineService.getTimeSeries(JSON.stringify([area])).subscribe((result: any) => {
-        console.log(result);
-      });
+        result = JSON.parse(result);
+        let feats = result["features"]
+        var props: { [key: string]: any[] } = {"dates":[], "NDMI": [], "NDVI": []}
+        for (let i = 0; i < feats.length; i++) {
+          props["dates"].push(feats[i]["properties"]["system:time_start"]);
+          props["NDMI"].push(feats[i]["properties"]["NDMI"]);
+          props["NDVI"].push(feats[i]["properties"]["NDVI"]);
+        }
+        console.log(props);
+      })
     });
   }
 

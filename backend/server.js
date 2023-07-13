@@ -1,9 +1,13 @@
 const express = require('express');
+const bodyParser = require('body-parser')
+
 const ee = require('@google/earthengine');
 const privateKey = require('./config/private-key.json');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+app.use(bodyParser.json())
 
 ee.data.authenticateViaPrivateKey(privateKey, () => {
   ee.initialize(null, null, () => {
@@ -91,8 +95,6 @@ app.get('/get-time-series', (req, res) => {
   s2_sr = s2_sr.map(getNDVI).map(clipNDMI);
   s2_sr = s2_sr.map(clipArea).map(reduce_region);
   s2_sr = s2_sr.select(["NDVI", "NDMI"])
-
-  // res.send(s2_sr.getInfo());
   s2_sr.evaluate((result, error) => {
     if (error) {
       console.log('Error:', error);
@@ -102,5 +104,3 @@ app.get('/get-time-series', (req, res) => {
     }
   });
 });
-
-// '[[[-4.690932512848409,40.63479884404164],[-4.690932512848409,40.657722371758105],[-4.657959889075778,40.657722371758105],[-4.657959889075778,40.63479884404164]]]'

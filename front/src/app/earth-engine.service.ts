@@ -10,15 +10,20 @@ export class EarthEngineService {
 
   getMapId(area: any) {
     const params = { area: area };
-    return this.http.get('http://localhost:3000/mapid', { params, responseType: 'text' });
+    const response = this.http.get('http://localhost:3000/mapid', { params, responseType: 'text' });
+    response.subscribe((data: any) => {
+      return data;
+    });
   }
 
   getTimeSeries(area: any) {
     const params = { area: area };
-    const datos = this.http.get('http://localhost:3000/get-time-series', { params, responseType: 'text' })
-    console.log("backend start")
-    console.log(datos)
-    console.log("backend end")
-    return datos;
+    const response = this.http.get('http://localhost:3000/get-time-series', { params, responseType: 'text' })
+    return response;
+  }
+
+  getMisiones() {
+    let url = "https://raw.githubusercontent.com/r-spatial/rgee/master/inst/dataset.json";
+    return this.http.get(url);
   }
 }

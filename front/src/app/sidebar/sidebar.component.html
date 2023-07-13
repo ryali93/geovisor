@@ -5,7 +5,7 @@
             href="#nav-home" 
             role="tab" 
             aria-controls="nav-home" aria-selected="true">
-            Explorador
+            {{nls.tab.tabFisrt}}
         </a> 
         <a class="nav-link" id="nav-profile-tab" 
             data-toggle="tab"
@@ -13,14 +13,70 @@
             role="tab" 
             aria-controls="nav-profile" 
             aria-selected="false">
-            Acerca de
+            {{nls.tab.tabSecond}}
         </a>
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent" style="background-color: #e8f1f1 !important;">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="chart-container">
-            <canvas #indicesChart></canvas>
-        </div>
+    <div class="tab-pane fade show active" id="nav-home" 
+          role="tabpanel" aria-labelledby="nav-home-tab">
+        <form>
+            <fieldset class="p-3">
+                <!-- <section class="form-group row text-center" style="margin-bottom: 8px;">
+                    <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input input-sm" type="radio" id="{{ID_Tab01}}" value="{{Tab01}}" 
+                            [formControl]="radioGroup" [(ngModel)]="defaultRadio" (change)="onChangeRadio($event.target)">
+                            <label class="form-check-label" for="{{ID_Tab01}}">
+                            {{nls.checkBox.checkBoxFisrt}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input input-sm" type="radio" id="{{ID_Tab02}}" value="{{Tab02}}"
+                            [formControl]="radioGroup" [(ngModel)]="defaultRadio" (change)="onChangeRadio($event.target)">
+                            <label class="form-check-label" for="{{ID_Tab02}}">
+                                {{nls.checkBox.checkBoxSecond}}
+                            </label>
+                        </div>
+                    </div>
+                </section> -->
+                <section class="row">
+                    <!-- CBO - Cuenca -->
+                    <div class="col-md-6">
+                        <div class="form-group" style="margin-bottom: 11px;">
+                            <select id="ID_Mision" class="form-control form-control-sm" (change)="onChangeMision($event)">
+                            <option *ngFor="let item of listOptionMision" value="{{item.value}}" [selected]="item.value===137554">
+                                {{item.name}}
+                            </option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- CBO - Variables -->
+                    <!-- <div class="col-md-6">
+                        <div class="form-group" style="margin-bottom: 11px;">
+                            <select class="form-control form-control-sm"
+                            (change)="onChangeVariable($event)">
+                            <option *ngFor="let item of listOptionEscenario" value="{{item.value}}" [selected]="item.value==='bh_pc'">
+                                {{item.name}}
+                            </option>
+                            </select>
+                        </div>
+                    </div> -->
+                </section>
+                <!-- /////////////////////////////////////// -->
+                <button type="button" class="btn btn-primary" (click)="createChart()">Create Chart</button>
+                <div class="tab-content" id="nav-tabContent" style="background-color: #e8f1f1 !important;">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="chart-container">
+                            <canvas  id="indicesChart" >{{ chart_indices }}</canvas>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
 </div>
+
+

@@ -10,6 +10,9 @@ import { MapComponent } from './map/map.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 import { EarthEngineService } from './earth-engine.service';
+import { RestService } from './rest.service';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,10 +25,12 @@ import { EarthEngineService } from './earth-engine.service';
   imports: [
     NgbModule,
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
-    EarthEngineService
+    EarthEngineService,
+    RestService
   ],
   bootstrap: [AppComponent]
 })
