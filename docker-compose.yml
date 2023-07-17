@@ -31,7 +31,7 @@ services:
     build: ./backend
     ports:
       - "0.0.0.0:3000:3000"
-    command: node start
+    command: node src/server.js
 
 volumes:
   geoserver-data:
