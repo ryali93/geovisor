@@ -27,6 +27,12 @@ services:
       - "0.0.0.0:4200:4200"
     command: npx ng serve --host 0.0.0.0
 
+  backend:
+    build: ./backend
+    ports:
+      - "0.0.0.0:3000:3000"
+    command: node start
+
 volumes:
   geoserver-data:
   postgis-data:

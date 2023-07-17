@@ -1,4 +1,4 @@
-FROM node:14 as build
+FROM node:16 as build
 ARG WORK_DIR=/frontend
 ENV PATH ${WORK_DIR}/node_modules/.bin:$PATH
 

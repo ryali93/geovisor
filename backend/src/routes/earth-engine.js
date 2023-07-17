@@ -1,24 +1,8 @@
-const express = require('express');
-const bodyParser = require('body-parser')
-
+const router = require('express').Router();
 const ee = require('@google/earthengine');
-const privateKey = require('./config/private-key.json');
+const geeMethodsCtrl = require('../operations/gee-methods-ctrl');
 
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.use(bodyParser.json())
-
-ee.data.authenticateViaPrivateKey(privateKey, () => {
-  ee.initialize(null, null, () => {
-    console.log('Earth Engine client library initialized.');
-    app.listen(port, () => {
-      console.log(`Listening on port ${port}`);
-    });
-  });
-});
-
-app.get('/mapid', (req, res) => {
+router.get('/mapid', (req, res) => {
     const area = req.query.area;
     if (!area) {
       res.status(400).send('Debe proporcionar el parámetro de área');
@@ -48,7 +32,7 @@ app.get('/mapid', (req, res) => {
     s2_sr.select("NDVI").getMap({ min: -1, max: 1 }, ({ urlFormat }) => res.send(urlFormat));
 });
 
-app.get('/get-time-series', (req, res) => {
+router.get('/get-time-series', (req, res) => {
   const area = req.query.area;
   if (!area) {
     res.status(400).send('Debe proporcionar el parámetro de área');
@@ -70,7 +54,7 @@ app.get('/get-time-series', (req, res) => {
     image = image.addBands(NDVI);
     return image;
   }
-  function clipNDMI(image) {
+  function getNDMI(image) {
     var NDMI = image.expression(
         '(SWIR1 - NIR) / (SWIR1 + NIR)', {
             'NIR': image.select('B8').divide(10000),
@@ -92,7 +76,7 @@ app.get('/get-time-series', (req, res) => {
                   .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 20)
                   .filterBounds(geometry)
                   .filterDate('2021-01-01', '2023-06-30');
-  s2_sr = s2_sr.map(getNDVI).map(clipNDMI);
+  s2_sr = s2_sr.map(getNDVI).map(getNDMI);
   s2_sr = s2_sr.map(clipArea).map(reduce_region);
   s2_sr = s2_sr.select(["NDVI", "NDMI"])
   s2_sr.evaluate((result, error) => {
@@ -104,3 +88,21 @@ app.get('/get-time-series', (req, res) => {
     }
   });
 });
+
+router.post('/get-ts', async(request, response) => {
+    const { collection_name, geometry, reducer, scale } = request.query;
+    // collection_name = 'COPERNICUS/S2_SR_HARMONIZED';
+    // geometry = "[[[-4.690932512848409,40.63479884404164],[-4.690932512848409,40.657722371758105],[-4.657959889075778,40.657722371758105],[-4.657959889075778,40.63479884404164]]]"
+    // reducer = "mean";
+    // scale = 10;
+    const data = await geeMethodsCtrl.get_time_series(collection_name, geometry, reducer, scale);
+    data.evaluate((result, error) => {
+      if (error) {
+          console.log('Error:', error);
+          response.status(500).send('Error al procesar la imagen');
+      } else {
+          response.send(result);
+      }});
+});
+
+module.exports = router;
