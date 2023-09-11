@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Geovisor</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.5.1/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <h2>Controls</h2>
+        <div class="group">
+            <input type="text" id="calendar-range">
+            <span class="bar"></span>
+            <label class="input-label">Range of dates</label>
+
+            <div id="nested-combobox">
+                <select id="missionSelect" class="custom-select">
+                    <option value="">Select a mision</option>
+                </select>
+                <select id="satelliteSelect"  class="custom-select" disabled>
+                    <option value="">Select a satellite</option>
+                </select>
+                <select id="bandSelect" class="custom-select" multiple disabled>
+                    <option value="">Select bands</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="drawContainer">
+            <div class="drawButtons">
+                <button class="drawButton" id="drawRectangle" title="Rectangle"></button>
+                <button class="drawButton" id="drawPolygon" title="Polygon"></button>
+                <!-- <button class="drawButton" id="drawCircle" title="Circle"></button> -->
+                <button class="drawButton" id="drawClear" title="Clear"></button>
+            </div>
+        </div>
+
+    <br>
+    <button id="getDataButton">Obtener Datos</button>
+
+    </div>
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

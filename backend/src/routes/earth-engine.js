@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const ee = require('@google/earthengine');
-const geeMethodsCtrl = require('../operations/gee-methods-ctrl');
+const geeMethodsCtrl = require('../controller/gee-methods-ctrl');
 
 router.get('/mapid', (req, res) => {
     const area = req.query.area;
@@ -90,12 +90,8 @@ router.get('/get-time-series', (req, res) => {
 });
 
 router.post('/get-ts', async(request, response) => {
-    const { collection_name, geometry, reducer, scale } = request.query;
-    // collection_name = 'COPERNICUS/S2_SR_HARMONIZED';
-    // geometry = "[[[-4.690932512848409,40.63479884404164],[-4.690932512848409,40.657722371758105],[-4.657959889075778,40.657722371758105],[-4.657959889075778,40.63479884404164]]]"
-    // reducer = "mean";
-    // scale = 10;
-    const data = await geeMethodsCtrl.get_time_series(collection_name, geometry, reducer, scale);
+    const { collection_name, geometry, reducer, resolution, start_date, end_date, bands } = request.query;
+    const data = await geeMethodsCtrl.get_time_series(collection_name, geometry, reducer, resolution, start_date, end_date, bands);
     data.evaluate((result, error) => {
       if (error) {
           console.log('Error:', error);

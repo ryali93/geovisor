@@ -10,15 +10,13 @@ export class EarthEngineService {
 
   getMapId(area: any) {
     const params = { area: area };
-    const response = this.http.get('http://localhost:3000/mapid', { params, responseType: 'text' });
-    response.subscribe((data: any) => {
-      return data;
-    });
+    const response = this.http.get('http://localhost:3000/ee/mapid', { params, responseType: 'text' });
+    return response;
   }
 
   getTimeSeries(area: any) {
     const params = { area: area };
-    const response = this.http.get('http://localhost:3000/get-time-series', { params, responseType: 'text' })
+    const response = this.http.get('http://localhost:3000/ee/get-time-series', { params, responseType: 'text' })
     return response;
   }
 

@@ -4,6 +4,7 @@ import { MapService } from '../map.service';
 import { SidebarService } from '../sidebar.service';
 import { nls } from './nls';
 import * as L from 'leaflet';
+import * as Esri from 'esri-leaflet';
 import 'leaflet-draw/dist/leaflet.draw-src.js'; // add this
 import 'leaflet-draw';
 
@@ -49,6 +50,14 @@ export class MapComponent implements OnDestroy, OnInit {
       maxZoom: 18,
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
     }));
+    this.mapLeaflet.addLayer(
+      Esri.dynamicMapLayer({
+        url: 'https://ideg.xunta.gal/servizos/rest/services/MapasBase/MapaBase_2020/MapServer/WMTS',
+        opacity: 0.7,
+        layers: [0],
+        f: 'image'
+      })
+    )
 
     const drawControl = new (L.Control as any).Draw({
       draw: {
@@ -76,14 +85,14 @@ export class MapComponent implements OnDestroy, OnInit {
       const latLngs = layer.getLatLngs();
       const area = latLngs[0].map((latLng: L.LatLng) => ([latLng.lng, latLng.lat]));
       this.MapService.sendArea(area);
-      // this.earthEngineService.getMapId(JSON.stringify([area])).subscribe((result: any) => {
-      //   console.log(result);
-      //   this.mapLeaflet.addLayer(L.tileLayer(result, {
-      //     maxZoom: 18,
-      //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-      //     opacity: 0.5
-      //   }));
-      // });
+      this.earthEngineService.getMapId(JSON.stringify([area])).subscribe((result: any) => {
+        console.log(result);
+        this.mapLeaflet.addLayer(L.tileLayer(result, {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+          opacity: 0.5
+        }));
+      });
       this.earthEngineService.getTimeSeries(JSON.stringify([area])).subscribe((result: any) => {
         result = JSON.parse(result);
         let feats = result["features"]
