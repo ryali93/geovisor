@@ -130,13 +130,6 @@ document.getElementById('drawClear').addEventListener('click', function() {
 });
 
 //////////////////////////////////////////////////////////////////////
-// Create a fetch request to get the data from the backend
-const get_ts = async (collection_name, geometry, reducer, resolution, start_date, end_date, bands) => {
-    const response = await fetch(`/earth-engine/get-ts?collection_name=${collection_name}&geometry=${geometry}&reducer=${reducer}&resolution=${resolution}&start_date=${start_date}&end_date=${end_date}&bands=${bands}`);
-    const data = await response.json();
-    return data;
-};
-
 // Get elements from the DOM in a function
 document.getElementById('getDataButton').addEventListener('click', async function() {
     // Obtener el valor del select de la misión
@@ -173,66 +166,27 @@ document.getElementById('getDataButton').addEventListener('click', async functio
       endDate,
       bands
     });
+
+    // Obtener el mapid
+    const mapid = await get_mapid(geometry);
+    console.log(mapid);
+
+    // Añadir la imagen XYZ al mapa
+    const xyzSource = new ol.source.XYZ({
+        url: mapid,
+        attributions: "XYZ",
+        maxZoom: 18
+    });
+    const xyzLayer = new ol.layer.Tile({ source: xyzSource });
+    map.addLayer(xyzLayer);
+
 });
 
-
-const mapIdData = await get_mapid(geometry);
-if (!mapIdData) {
-    console.error('No se pudo obtener el Map ID.');
-    return;
-}
-// Añadir la capa al mapa de OpenLayers
-let tileLayer = new ol.layer.Tile({
-source: new ol.source.XYZ({
-    url: mapIdData, // Reemplaza esto con la URL que obtienes del backend
-    maxZoom: 18,
-}),
-opacity: 0.5,
-});
-map.addLayer(tileLayer);
-
-async function get_mapid(geometry) {
-    try {
-      const transformedCoordinates = geometry.getCoordinates()[0].map(coord => {
-        return ol.proj.transform(coord, 'EPSG:3857', 'EPSG:4326');
-      });
-      const response = await fetch(`/earth-engine/mapid?area=${encodeURIComponent(JSON.stringify(transformedCoordinates))}`);
-      if (!response.ok) {
-        console.error('Ocurrió un error al obtener el Map ID:', response.statusText);
-        return null;
-      }
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error('Ocurrió un error al obtener el Map ID:', error);
-      return null;
-    }
-  }
-
-
-// Event for when the button is clicked
-// getTsButton.addEventListener('click', async function() {
-//     const data = await get_ts(collectionName.value, geometry.value, reducer.value, resolution.value, startDate.value, endDate.value, bands.value);
-//     console.log(data);
-// });
-
-
-// Widget de calendario
-// const calendar = document.getElementById('calendar');
-
-// calendar.addEventListener('change', function() {
-//     const selectedDate = this.value;
-// });
-
-// Suponiendo que obtienes los datos desde tu backend como un array de objetos
-// fetch('tu_url_para_obtener_datos')
-//   .then(response => response.json())
-//   .then(data => {
-//     const combobox1 = document.getElementById('combobox1');
-//     data.forEach(item => {
-//       const option = document.createElement('option');
-//       option.value = item.id; // Cambia 'id' por el campo apropiado de tu objeto
-//       option.textContent = item.name; // Cambia 'name' por el campo apropiado de tu objeto
-//       combobox1.appendChild(option);
-//     });
-//   });
+const get_mapid = async (geometry) => {
+  const coordinates = geometry.getCoordinates()[0].map(coord => {
+    return ol.proj.transform(coord, 'EPSG:3857', 'EPSG:4326');
+  });
+  const response = await fetch(`http://localhost:3000/ee/mapid?area=${encodeURIComponent(JSON.stringify(coordinates))}`);
+  const data = await response.text();
+  return data;
+};
