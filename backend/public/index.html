@@ -23,22 +23,33 @@
                 <select id="missionSelect" class="custom-select">
                     <option value="">Select a mision</option>
                 </select>
-                <select id="satelliteSelect"  class="custom-select" disabled>
+                <select id="productSelect"  class="custom-select" disabled>
                     <option value="">Select a satellite</option>
                 </select>
                 <select id="bandSelect" class="custom-select" multiple disabled>
                     <option value="">Select bands</option>
                 </select>
             </div>
+            <br>
+
+            <button id="toggleAdvanced">Advanced</button>
+            <div id="advancedOptions" style="display:none;">
+              <select id="indexSelect" class="custom-select">
+                <option value="">Select index</option>
+                <!-- <option value="NDVI">NDVI</option>
+                <option value="SAVI">SAVI</option>
+                <option value="NDMI">NDMI</option> -->
+              </select>
+            </div>
         </div>
 
+        <!-- Drawing tools -->
         <div class="drawContainer">
-            <div class="drawButtons">
-                <button class="drawButton" id="drawRectangle" title="Rectangle"></button>
-                <button class="drawButton" id="drawPolygon" title="Polygon"></button>
-                <!-- <button class="drawButton" id="drawCircle" title="Circle"></button> -->
-                <button class="drawButton" id="drawClear" title="Clear"></button>
-            </div>
+          <div class="drawButtons">
+              <button class="drawButton" id="drawRectangle" title="Rectangle"></button>
+              <button class="drawButton" id="drawPolygon" title="Polygon"></button>
+              <button class="drawButton" id="drawClear" title="Clear"></button>
+          </div>
         </div>
 
     <br>

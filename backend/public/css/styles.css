@@ -134,6 +134,16 @@ input:focus ~ .bar:after {
     color: #0288D1;
 }
 
+.custom-select:hover {
+    cursor: pointer;
+}
+
+/* .custom-select for bandSelect */
+#bandSelect {
+    height: 350px;
+}
+
+
 /* Draw styles */
 .drawContainer {
     margin-top: 15px;
@@ -169,6 +179,10 @@ input:focus ~ .bar:after {
     align-items: center;
     border: none;
 }
+.drawButton:active,
+.drawButton:focus {
+    background-color: #01579B;
+}
 
 #drawRectangle {
     background-image: url("img/rectangle.png");
@@ -197,8 +211,8 @@ input:focus ~ .bar:after {
     background-position: center;
     background-color: #F45050;
     background-size: 20px;
+    opacity: 0.8;
 }
-
 
 /* run button */
 .runButton {
@@ -218,7 +232,24 @@ input:focus ~ .bar:after {
     align-items: center;
     border: none;
     margin-top: 15px;
+    margin-left: auto;
 }
 .runButton:hover {
     background-color: #0288D1;
+}
+
+/* Estilos para el botón toggleAdvanced */
+#toggleAdvanced {
+    background-color: #0288D1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    position: relative; /* Importante para el posicionamiento del pseudo-elemento */
+  }
+  
+#toggleAdvanced:hover {
+    background-color: #01579B;
 }
