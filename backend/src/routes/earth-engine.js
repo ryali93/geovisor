@@ -1,13 +1,29 @@
 const router = require('express').Router();
 const ee = require('@google/earthengine');
 const geeMethodsCtrl = require('../controller/gee-methods-ctrl');
+const e = require('express');
 
 router.get('/mapid', (req, res) => {
+    const id = req.query.id;
     const area = req.query.area;
+    const bands_s = req.query.bands;
+    const type = req.query.type;
+    const scale_s = req.query.scale;
+    const start_date = req.query.start_date;
+    const end_date = req.query.end_date;
+
     if (!area) {
       res.status(400).send('Debe proporcionar el parámetro de área');
       return;
     }
+
+    let scale
+    if (!scale_s) {
+      scale = Number(1);
+    }else {
+      scale = Number(scale_s);
+    }
+
     let geometry;
     try {
       geometry = ee.Geometry.Polygon(JSON.parse(area));
@@ -15,21 +31,28 @@ router.get('/mapid', (req, res) => {
       res.status(400).send('El parámetro de área no es válido');
       return;
     }
-    function getNDVI(image) {
-      var NDVI = image.expression(
-          '(NIR - RED) / (NIR +  RED)', {
-              'NIR': image.select('B8').divide(10000),
-              'RED': image.select('B4').divide(10000)
-          }).rename("NDVI");
-      image = image.addBands(NDVI);
-      return image;
+    const bands = bands_s.split(","); //.slice(1, -1)
+
+    // Create a vizualization for bands selected with the min and max values
+    viz = {min:0, max:0.3}
+    if (type == "image") {
+      var map_sr = ee.Image(id);
+      map_sr = map_sr.clip(geometry);
+      map_sr = map_sr.select(bands);
+    } else if (type == "image_collection") {
+      var map_sr = ee.ImageCollection(id).filterBounds(geometry);
+      map_sr = map_sr.filterDate(start_date, end_date);
+      map_sr = map_sr.mean();
+      map_sr = map_sr.clip(geometry);
+      map_sr = map_sr.select(bands);
+    } else if (type == "table") {
+      var map_sr = ee.FeatureCollection(id);
+      map_sr = map_sr.filterBounds(geometry);
+    } else if (type == "table_collection") {
+      var map_sr = ee.FeatureCollection(id);
+      map_sr = map_sr.filterBounds(geometry);
     }
-    var s2_sr = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
-                    .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 20)
-                    .filterBounds(geometry);
-    s2_sr = s2_sr.map(getNDVI).median();
-    s2_sr = s2_sr.clip(geometry);
-    s2_sr.select("NDVI").getMap({ min: -1, max: 1 }, ({ urlFormat }) => res.send(urlFormat));
+    map_sr.multiply(scale).getMap(viz, ({ urlFormat }) => res.send(urlFormat));
 });
 
 router.get('/get-time-series', (req, res) => {

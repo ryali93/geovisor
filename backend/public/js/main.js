@@ -161,6 +161,9 @@ document.getElementById('drawClear').addEventListener('click', function() {
 document.getElementById('getDataButton').addEventListener('click', async function() {
     // Get the value of the mission select
     const collectionName = document.getElementById('missionSelect').value;
+    const productName = document.getElementById('productSelect').value;
+
+    const idName = collectionName + "/" + productName;
   
     // Get the geometry drawn (if exists)
     const features = source.getFeatures();
@@ -170,7 +173,6 @@ document.getElementById('getDataButton').addEventListener('click', async functio
     }
   
     const reducer = "mean"
-    const resolution = 30 
   
     // Get the dates from the Flatpickr calendar
     const dateRange = document.getElementById('calendar-range')._flatpickr.selectedDates;
@@ -180,21 +182,41 @@ document.getElementById('getDataButton').addEventListener('click', async functio
     // Get the selected bands (if any)
     const bandSelect = document.getElementById('bandSelect');
     const selectedOptions = Array.from(bandSelect.selectedOptions);
-    const bands = selectedOptions.map(option => option.value);
-  
+    const selectedBands = selectedOptions.map(option => option.value);
+    const bands = selectedOptions.map(option => option.value).join(",");
+
+    const item_data = globalData.find(item => item.MISSION === collectionName && item.PRODUCT === productName);
+    
+    // Get the selected scales
+    const selectedScales = selectedBands.map(selectedBand => {
+      const bandIndex = item_data.band_values.indexOf(selectedBand);
+      if (bandIndex === -1) {
+        console.error(`La banda ${selectedBand} no se encontró en la información de datos`);
+        return null;
+      }
+      return item_data.band_scale[bandIndex];
+    });
+    // Get the mean scale
+    const scale = selectedScales.reduce((a, b) => a + b, 0) / selectedScales.length;
+
+    // Get the selected type
+    const relevantProduct = globalData.find(item => item.MISSION === collectionName && item.PRODUCT === productName);
+    const type = relevantProduct.gee_type;
+
     // Show in console
     console.log({
-      collectionName,
+      idName,
       geometry: geometry ? geometry.getCoordinates() : null,
-      reducer,
-      resolution,
+      bands,
+      type,
+      scale,
       startDate,
-      endDate,
-      bands
+      endDate
     });
 
     // Get the mapid
-    const mapid = await get_mapid(geometry);
+    // const mapid = await get_mapid(geometry);
+    const mapid = await get_mapid(idName, geometry, bands, type, scale, startDate, endDate);
     console.log(mapid);
 
     // Add the XYZ image to the map
@@ -208,11 +230,23 @@ document.getElementById('getDataButton').addEventListener('click', async functio
 
 });
 
-const get_mapid = async (geometry) => {
+const get_mapid = async (idName, geometry, bands, type, scale, start_date, end_date) => {
   const coordinates = geometry.getCoordinates()[0].map(coord => {
     return ol.proj.transform(coord, 'EPSG:3857', 'EPSG:4326');
   });
-  const response = await fetch(`http://localhost:3000/ee/mapid?area=${encodeURIComponent(JSON.stringify(coordinates))}`);
-  const data = await response.text();
-  return data;
+  
+  // Crear la URL con todos los parámetros necesarios
+  const url = new URL("http://localhost:3000/ee/mapid");
+  url.search = new URLSearchParams({
+    id: idName,
+    area: JSON.stringify(coordinates),
+    bands: bands,
+    type: type,
+    scale: scale,
+    start_date: start_date,
+    end_date: end_date
+  });
+  const response = await fetch(url);
+  const data = await response.text(); 
+  return data; 
 };

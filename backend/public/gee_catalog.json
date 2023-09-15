@@ -1,1 +1,3393 @@
-[{"MISSION":"ACA","PRODUCT":"reef_habitat\/v2_0","band_values":null,"band_description":null},{"MISSION":"AU","PRODUCT":"GA\/DEM_1SEC\/v10\/DEM-H","band_values":null,"band_description":null},{"MISSION":"AU","PRODUCT":"GA\/DEM_1SEC\/v10\/DEM-S","band_values":null,"band_description":null},{"MISSION":"CGIAR","PRODUCT":"SRTM90_V4","band_values":null,"band_description":null},{"MISSION":"COPERNICUS","PRODUCT":"S2","band_values":["B1","B2","B3","B4","B5","B6","B7","B8","B8A","B9","B10","B11","B12"],"band_description":["Aerosols","Blue","Green","Red","Red Edge 1","Red Edge 2","Red Edge 3","NIR","Red Edge 4","Water vapor","Cirrus","SWIR 1","SWIR 2"]},{"MISSION":"COPERNICUS","PRODUCT":"S2_HARMONIZED","band_values":["B1","B2","B3","B4","B5","B6","B7","B8","B8A","B9","B10","B11","B12"],"band_description":["Aerosols","Blue","Green","Red","Red Edge 1","Red Edge 2","Red Edge 3","NIR","Red Edge 4","Water vapor","Cirrus","SWIR 1","SWIR 2"]},{"MISSION":"COPERNICUS","PRODUCT":"S2_SR","band_values":["B1","B2","B3","B4","B5","B6","B7","B8","B8A","B9","B11","B12","AOT","WVP"],"band_description":["Aerosols","Blue","Green","Red","Red Edge 1","Red Edge 2","Red Edge 3","NIR","Red Edge 4","Water vapor","SWIR 1","SWIR 2","Aerosol Optical Thickness","Water Vapor Pressure. The height the water would occupy if the vapor were condensed into\nliquid and spread evenly across the column.\n"]},{"MISSION":"COPERNICUS","PRODUCT":"S2_SR_HARMONIZED","band_values":["B1","B2","B3","B4","B5","B6","B7","B8","B8A","B9","B11","B12","AOT","WVP"],"band_description":["Aerosols","Blue","Green","Red","Red Edge 1","Red Edge 2","Red Edge 3","NIR","Red Edge 4","Water vapor","SWIR 1","SWIR 2","Aerosol Optical Thickness","Water Vapor Pressure. The height the water would occupy if the vapor were condensed into\nliquid and spread evenly across the column.\n"]},{"MISSION":"COPERNICUS","PRODUCT":"S3\/OLCI","band_values":["Oa01_radiance","Oa02_radiance","Oa03_radiance","Oa04_radiance","Oa05_radiance","Oa06_radiance","Oa07_radiance","Oa08_radiance","Oa09_radiance","Oa10_radiance","Oa11_radiance","Oa12_radiance","Oa13_radiance","Oa14_radiance","Oa15_radiance","Oa16_radiance","Oa17_radiance","Oa18_radiance","Oa19_radiance","Oa20_radiance","Oa21_radiance"],"band_description":["Aerosol correction, improved water constituent retrieval","Yellow substance and detrital pigments (turbidity)","Chl absorption max., biogeochemistry, vegetation","High Chl, other pigments","Chl, sediment, turbidity, red tide","Chlorophyll reference (Chl minimum)","Sediment loading","Chl (2^nd Chl abs. max.), sediment, yellow substance\/vegetation","For improved fluorescence retrieval and to better\naccount for [smile](https:\/\/sentinels.copernicus.eu\/web\/sentinel\/technical-guides\/sentinel-3-olci\/level-2\/smile-correction)\ntogether with the bands 665 and 680nm\n","Chl fluorescence peak, red edge","Chl fluorescence baseline, red edge transition","O2 absorption\/clouds, vegetation","O2 absorption band\/aerosol correction","Atmospheric correction","O2A used for cloud top pressure, fluorescence over land","Atmospheric correction\/aerosol correction","Atmospheric correction\/aerosol correction, clouds, pixel co-registration","Water vapor absorption reference band. Common reference\nband with SLSTR instrument. Vegetation monitoring\n","Water vapor absorption\/vegetation monitoring (max. reflectance)","Water vapor absorption, atmospheric\/aerosol correction","Atmospheric\/aerosol correction"]},{"MISSION":"DLR","PRODUCT":"WSF\/WSF2015\/v1","band_values":null,"band_description":null},{"MISSION":"JCU","PRODUCT":"Murray\/GIC\/global_tidal_wetland_change\/2019","band_values":null,"band_description":null},{"MISSION":"JRC","PRODUCT":"GHSL\/P2016\/BUILT_LDSMT_GLOBE_V1","band_values":null,"band_description":null},{"MISSION":"JRC","PRODUCT":"GSW1_4\/GlobalSurfaceWater","band_values":null,"band_description":null},{"MISSION":"JRC","PRODUCT":"GSW1_4\/Metadata","band_values":null,"band_description":null},{"MISSION":"JRC","PRODUCT":"GWIS\/GlobFire\/v2\/DailyPerimeters","band_values":null,"band_description":null},{"MISSION":"JRC","PRODUCT":"GWIS\/GlobFire\/v2\/FinalPerimeters","band_values":null,"band_description":null},{"MISSION":"LANDSAT","PRODUCT":"LC08\/C02\/T1_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B6","SR_B7","ST_B10","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (ultra blue, coastal aerosol) surface reflectance","Band 2 (blue) surface reflectance","Band 3 (green) surface reflectance","Band 4 (red) surface reflectance","Band 5 (near infrared) surface reflectance","Band 6 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","Band 10 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LC08\/C02\/T2_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B6","SR_B7","ST_B10","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (ultra blue, coastal aerosol) surface reflectance","Band 2 (blue) surface reflectance","Band 3 (green) surface reflectance","Band 4 (red) surface reflectance","Band 5 (near infrared) surface reflectance","Band 6 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","Band 10 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LC09\/C02\/T1_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B6","SR_B7","ST_B10","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (ultra blue, coastal aerosol) surface reflectance","Band 2 (blue) surface reflectance","Band 3 (green) surface reflectance","Band 4 (red) surface reflectance","Band 5 (near infrared) surface reflectance","Band 6 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","Band 10 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LC09\/C02\/T2_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B6","SR_B7","ST_B10","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (ultra blue, coastal aerosol) surface reflectance","Band 2 (blue) surface reflectance","Band 3 (green) surface reflectance","Band 4 (red) surface reflectance","Band 5 (near infrared) surface reflectance","Band 6 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","Band 10 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LE07\/C02\/T1_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B7","SR_ATMOS_OPACITY","ST_B6","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (blue) surface reflectance","Band 2 (green) surface reflectance","Band 3 (red) surface reflectance","Band 4 (near infrared) surface reflectance","Band 5 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n","Band 6 surface temperature. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity estimated from ASTER GED. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LE07\/C02\/T2_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B7","SR_ATMOS_OPACITY","ST_B6","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (blue) surface reflectance","Band 2 (green) surface reflectance","Band 3 (red) surface reflectance","Band 4 (near infrared) surface reflectance","Band 5 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n","Band 6 surface temperature. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity estimated from ASTER GED. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LT04\/C02\/T1_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B7","SR_ATMOS_OPACITY","ST_B6","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (blue) surface reflectance","Band 2 (green) surface reflectance","Band 3 (red) surface reflectance","Band 4 (near infrared) surface reflectance","Band 5 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n","Band 6 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LT04\/C02\/T2_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B7","SR_ATMOS_OPACITY","ST_B6","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (blue) surface reflectance","Band 2 (green) surface reflectance","Band 3 (red) surface reflectance","Band 4 (near infrared) surface reflectance","Band 5 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n","Band 6 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LT05\/C02\/T1_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B7","SR_ATMOS_OPACITY","ST_B6","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (blue) surface reflectance","Band 2 (green) surface reflectance","Band 3 (red) surface reflectance","Band 4 (near infrared) surface reflectance","Band 5 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n","Band 6 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"LANDSAT","PRODUCT":"LT05\/C02\/T2_L2","band_values":["SR_B1","SR_B2","SR_B3","SR_B4","SR_B5","SR_B7","SR_ATMOS_OPACITY","ST_B6","ST_ATRAN","ST_CDIST","ST_DRAD","ST_EMIS","ST_EMSD","ST_QA","ST_TRAD","ST_URAD"],"band_description":["Band 1 (blue) surface reflectance","Band 2 (green) surface reflectance","Band 3 (red) surface reflectance","Band 4 (near infrared) surface reflectance","Band 5 (shortwave infrared 1) surface reflectance","Band 7 (shortwave infrared 2) surface reflectance","A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n","Band 6 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Emissivity estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.","Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n","Upwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."]},{"MISSION":"MODIS","PRODUCT":"006\/MOD44B","band_values":["Percent_Tree_Cover_SD","Percent_NonVegetated_SD"],"band_description":["Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent tree cover data\nlayer\n","Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent non-vegetated\ndata layer\n"]},{"MISSION":"MODIS","PRODUCT":"006\/MODOCGA","band_values":["sur_refl_b08","sur_refl_b09","sur_refl_b10","sur_refl_b11","sur_refl_b12","sur_refl_b13","sur_refl_b14","sur_refl_b15","sur_refl_b16"],"band_description":["MODIS band 8 surface reflectance","MODIS band 9 surface reflectance","MODIS band 10 surface reflectance","MODIS band 11 surface reflectance","MODIS band 12 surface reflectance","MODIS band 13 surface reflectance","MODIS band 14 surface reflectance","MODIS band 15 surface reflectance","MODIS band 16 surface reflectance"]},{"MISSION":"MODIS","PRODUCT":"006\/MYDOCGA","band_values":["sur_refl_b08","sur_refl_b09","sur_refl_b10","sur_refl_b11","sur_refl_b12","sur_refl_b13","sur_refl_b14","sur_refl_b15","sur_refl_b16"],"band_description":["MODIS band 8 surface reflectance","MODIS band 9 surface reflectance","MODIS band 10 surface reflectance","MODIS band 11 surface reflectance","MODIS band 12 surface reflectance","MODIS band 13 surface reflectance","MODIS band 14 surface reflectance","MODIS band 15 surface reflectance","MODIS band 16 surface reflectance"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD12Q2","band_values":["EVI_Minimum_1","EVI_Minimum_2","EVI_Amplitude_1","EVI_Amplitude_2","EVI_Area_1","EVI_Area_2"],"band_description":["Segment minimum EVI2 value, cycle 1","Segment minimum EVI2 value, cycle 2","Segment maximum - minimum EVI2, cycle 1","Segment maximum - minimum EVI2, cycle 2","Sum of daily interpolated EVI2 from Greenup to Dormancy, cycle 1","Sum of daily interpolated EVI2 from Greenup to Dormancy, cycle 2"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD15A3H","band_values":["Fpar","Lai","FparStdDev","LaiStdDev"],"band_description":["FPAR absorbed by the green elements of a vegetation canopy","One-sided green leaf area per unit ground area in\nbroadleaf canopies; one-half the total needle surface area per\nunit ground area in coniferous canopies\n","Standard deviation of Fpar","Standard deviation for Lai"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD19A1_GRANULES","band_values":["Sur_refl1","Sur_refl2","Sur_refl3","Sur_refl4","Sur_refl5","Sur_refl6","Sur_refl7","Sur_refl8","Sur_refl9","Sur_refl10","Sur_refl11","Sur_refl12","Sigma_BRFn1","Sigma_BRFn2","cosSZA","cosVZA","RelAZ","Scattering_Angle","SAZ","VAZ","Glint_Angle"],"band_description":["Surface reflectance at 500m for band 1.\n","Surface reflectance at 500m for band 2.\n","Surface reflectance at 500m for band 3.\n","Surface reflectance at 500m for band 4.\n","Surface reflectance at 500m for band 5.\n","Surface reflectance at 500m for band 6.\n","Surface reflectance at 500m for band 7.\n","Surface reflectance at 1km for band 8.\n","Surface reflectance at 1km for band 9.\n","Surface reflectance at 1km for band 10.\n","Surface reflectance at 1km for band 11.\n","Surface reflectance at 1km for band 12.\n","BRFn uncertainty over time at 1km, for band 1\n","BRFn uncertainty over time at 1km, for band 2","Cosine of Solar zenith angle (5 km resulution)","Cosine view zenith angle (5 km resolution)","Relative azimuth angle (5 km resolution)","Scattering angle (5 km resolution)","Solar Azimuth Angle (5 km resolution)","View Azimuth Angle (5 km resolution)","Glint angle (5 km resolution)"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD19A2_GRANULES","band_values":["Optical_Depth_047","Optical_Depth_055","AOD_Uncertainty","Column_WV","AngstromExp_470-780","cosSZA","cosVZA","RelAZ","Scattering_Angle","Glint_Angle"],"band_description":["Aerosol optical depth over land retrieved in the MODIS Blue band (0.47\n&mu;m). AOD is not received at high altitude (greater than 4.2 km)\nexcept when smoke or dust is detected; rather, we report a static\nvalue of 0.02 used for atmospheric correction.\n","Aerosol optical depth over land retrieved in the MODIS Green band\n(0.55 &mu;m).\n","AOD uncertainty based on blue-band surface brightness (reflectance)\n","Column water vapor over land, retrieved from MODIS near-IR bands at\n0.94 &mu;m. When reported for cloudy pixels, it represents water vapor\nabove the cloud.\n","Angstrom exponent 470-780nm over the ocean","Cosine of solar zenith angle (5 km resolution)","Cosine view zenith angle (5 km resolution)","Relative azimuth angle (5 km resolution)","Scattering angle (5 km resolution)","Glint angle (5 km resolution)"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD43A1","band_values":["BRDF_Albedo_Parameters_Band1_iso","BRDF_Albedo_Parameters_Band1_vol","BRDF_Albedo_Parameters_Band1_geo","BRDF_Albedo_Parameters_Band2_iso","BRDF_Albedo_Parameters_Band2_vol","BRDF_Albedo_Parameters_Band2_geo","BRDF_Albedo_Parameters_Band3_iso","BRDF_Albedo_Parameters_Band3_vol","BRDF_Albedo_Parameters_Band3_geo","BRDF_Albedo_Parameters_Band4_iso","BRDF_Albedo_Parameters_Band4_vol","BRDF_Albedo_Parameters_Band4_geo","BRDF_Albedo_Parameters_Band5_iso","BRDF_Albedo_Parameters_Band5_vol","BRDF_Albedo_Parameters_Band5_geo","BRDF_Albedo_Parameters_Band6_iso","BRDF_Albedo_Parameters_Band6_vol","BRDF_Albedo_Parameters_Band6_geo","BRDF_Albedo_Parameters_Band7_iso","BRDF_Albedo_Parameters_Band7_vol","BRDF_Albedo_Parameters_Band7_geo","BRDF_Albedo_Parameters_vis_iso","BRDF_Albedo_Parameters_vis_vol","BRDF_Albedo_Parameters_vis_geo","BRDF_Albedo_Parameters_nir_iso","BRDF_Albedo_Parameters_nir_vol","BRDF_Albedo_Parameters_nir_geo","BRDF_Albedo_Parameters_shortwave_iso","BRDF_Albedo_Parameters_shortwave_vol","BRDF_Albedo_Parameters_shortwave_geo"],"band_description":["BDRF\/Albedo isotropic parameter for band 1","BDRF\/Albedo volumetric parameter for band 1","BDRF\/Albedo geometric parameter for band 1","BDRF\/Albedo isotropic parameter for band 2","BDRF\/Albedo volumetric parameter for band 2","BDRF\/Albedo geometric parameter for band 2","BDRF\/Albedo isotropic parameter for band 3","BDRF\/Albedo volumetric parameter for band 3","BDRF\/Albedo geometric parameter for band 3","BDRF\/Albedo isotropic parameter for band 4","BDRF\/Albedo volumetric parameter for band 4","BDRF\/Albedo geometric parameter for band 4","BDRF\/Albedo isotropic parameter for band 5","BDRF\/Albedo volumetric parameter for band 5","BDRF\/Albedo geometric parameter for band 5","BDRF\/Albedo isotropic parameter for band 6","BDRF\/Albedo volumetric parameter for band 6","BDRF\/Albedo geometric parameter for band 6","BDRF\/Albedo isotropic parameter for band 7","BDRF\/Albedo volumetric parameter for band 7","BDRF\/Albedo geometric parameter for band 7","BDRF\/Albedo isotropic parameter for the visible band","BDRF\/Albedo volumetric parameter for the visible band","BDRF\/Albedo geometric parameter for the visible band","BDRF\/Albedo isotropic parameter for the NIR band","BDRF\/Albedo volumetric parameter for the NIR band","BDRF\/Albedo geometric parameter for the NIR band","BDRF\/Albedo isotropic parameter for the shortwave band","BDRF\/Albedo volumetric parameter for the shortwave band","BDRF\/Albedo geometric parameter for the shortwave band"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD43A2","band_values":["BRDF_Albedo_Uncertainty"],"band_description":["BRDF inversion information"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD43A3","band_values":["Albedo_BSA_Band1","Albedo_BSA_Band2","Albedo_BSA_Band3","Albedo_BSA_Band4","Albedo_BSA_Band5","Albedo_BSA_Band6","Albedo_BSA_Band7","Albedo_BSA_vis","Albedo_BSA_nir","Albedo_BSA_shortwave","Albedo_WSA_Band1","Albedo_WSA_Band2","Albedo_WSA_Band3","Albedo_WSA_Band4","Albedo_WSA_Band5","Albedo_WSA_Band6","Albedo_WSA_Band7","Albedo_WSA_vis","Albedo_WSA_nir","Albedo_WSA_shortwave"],"band_description":["Black-sky albedo for band 1","Black-sky albedo for band 2","Black-sky albedo for band 3","Black-sky albedo for band 4","Black-sky albedo for band 5","Black-sky albedo for band 6","Black-sky albedo for band 7","Black-sky albedo for visible brodband","Black-sky albedo for NIR broadband","Black-sky albedo for shortwave broadband","White-sky albedo for band 1","White-sky albedo for band 2","White-sky albedo for band 3","White-sky albedo for band 4","White-sky albedo for band 5","White-sky albedo for band 6","White-sky albedo for band 7","White-sky albedo for visible broadband","White-sky albedo for NIR broadband","White-sky albedo for shortwave broadband"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD43A4","band_values":["Nadir_Reflectance_Band1","Nadir_Reflectance_Band2","Nadir_Reflectance_Band3","Nadir_Reflectance_Band4","Nadir_Reflectance_Band5","Nadir_Reflectance_Band6","Nadir_Reflectance_Band7"],"band_description":["NBAR at local solar noon for band 1","NBAR at local solar noon for band 2","NBAR at local solar noon for band 3","NBAR at local solar noon for band 4","NBAR at local solar noon for band 5","NBAR at local solar noon for band 6","NBAR at local solar noon for band 7"]},{"MISSION":"MODIS","PRODUCT":"061\/MCD43C3","band_values":["Albedo_BSA_Band1","Albedo_BSA_Band2","Albedo_BSA_Band3","Albedo_BSA_Band4","Albedo_BSA_Band5","Albedo_BSA_Band6","Albedo_BSA_Band7","Albedo_BSA_vis","Albedo_BSA_nir","Albedo_BSA_shortwave","Albedo_WSA_Band1","Albedo_WSA_Band2","Albedo_WSA_Band3","Albedo_WSA_Band4","Albedo_WSA_Band5","Albedo_WSA_Band6","Albedo_WSA_Band7","Albedo_WSA_vis","Albedo_WSA_nir","Albedo_WSA_shortwave","BRDF_Albedo_Uncertainty"],"band_description":["Black-sky albedo for band 1","Black-sky albedo for band 2","Black-sky albedo for band 3","Black-sky albedo for band 4","Black-sky albedo for band 5","Black-sky albedo for band 6","Black-sky albedo for band 7","Black-sky albedo for visible brodband","Black-sky albedo for NIR broadband","Black-sky albedo for shortwave broadband","White-sky albedo for band 1","White-sky albedo for band 2","White-sky albedo for band 3","White-sky albedo for band 4","White-sky albedo for band 5","White-sky albedo for band 6","White-sky albedo for band 7","White-sky albedo for visible broadband","White-sky albedo for NIR broadband","White-sky albedo for shortwave broadband","BRDF inversion information. Weights of determination (WoD) of the white\nsky albedo (see Lucht, W., & Lewis, P. (2000). Theoretical noise\nsensitivity of BRDF and albedo retrieval from the EOS-MODIS and MISR\nsensors with respect to angular sampling. International Journal of\nRemote Sensing, 21(1), 81-98). WoDs give a measure of the\nuncertainty due to the angular sampling of the inputs available for each\nretrieval.\n"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD08_M3","band_values":["Aerosol_Optical_Depth_Land_Ocean_Mean_Mean","Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean","Aerosol_Optical_Depth_Land_QA_Mean_Mean_470","Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470","Cirrus_Fraction_SWIR_FMean","Cirrus_Fraction_SWIR_FStd","Cloud_Optical_Thickness_Liquid_Log_Mean_Mean","Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean","Cloud_Optical_Thickness_Liquid_Mean_Uncertainty","Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty"],"band_description":["Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily mean\n","Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily standard deviation\n","Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 QA weighted mean","Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 weighted QA standard deviation","Cirrus area fraction: mean of daily fraction","Cirrus area fraction: standard deviation of daily fraction","Liquid water cloud optical thickness: mean of daily log mean","Liquid water cloud optical thickness: mean of daily log standard deviation","Liquid water cloud optical thickness: multi-day absolute\nuncertainty estimate derived from the daily absolute uncertainty\nestimate\n","Liquid water cloud optical thickness: multi-day absolute\nlog uncertainty estimate derived from the daily absolute log\nuncertainty estimate\n"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD09A1","band_values":["sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b04","sur_refl_b05","sur_refl_b06","sur_refl_b07","SolarZenith","ViewZenith","RelativeAzimuth"],"band_description":["Surface reflectance for band 1","Surface reflectance for band 2","Surface reflectance for band 3","Surface reflectance for band 4","Surface reflectance for band 5","Surface reflectance for band 6","Surface reflectance for band 7","MODIS Solar zenith angle","MODIS view zenith angle","MODIS relative azimuth angle"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD09GA","band_values":["SensorZenith","SensorAzimuth","Range","SolarZenith","SolarAzimuth","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b04","sur_refl_b05","sur_refl_b06","sur_refl_b07"],"band_description":["Sensor zenith angle","Sensor azimuth angle","Distance to sensor","Solar zenith angle","Solar azimuth angle","Surface reflectance for band 1","Surface reflectance for band 2","Surface reflectance for band 3","Surface reflectance for band 4","Surface reflectance for band 5","Surface reflectance for band 6","Surface reflectance for band 7"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD09GQ","band_values":["sur_refl_b01","sur_refl_b02","obscov"],"band_description":["Surface reflectance band 1","Surface reflectance for band 2","Observation coverage percent"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD09Q1","band_values":["sur_refl_b01","sur_refl_b02"],"band_description":["Surface reflectance band 1","Surface reflectance for band 2"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD10A1","band_values":["NDSI"],"band_description":["Raw NDSI (i.e. prior to screening). This value is\ncomputed for MOD10_L2 and retrieved with the corresponding observation\nof the day.\n"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD11A1","band_values":["LST_Day_1km","Day_view_time","LST_Night_1km","Night_view_time","Emis_31","Emis_32","Clear_day_cov","Clear_night_cov"],"band_description":["Daytime Land Surface Temperature","Local time of day observation","Nighttime Land Surface Temperature","Local time of night observation","Band 31 emissivity","Band 32 emissivity","Day clear-sky coverage","Night clear-sky coverage"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD11A2","band_values":["LST_Day_1km","Day_view_time","LST_Night_1km","Night_view_time","Emis_31","Emis_32"],"band_description":["Day land surface temperature","Local time of day observation","Night land surface temperature","Local time of night observation","Band 31 emissivity","Band 32 emissivity"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD13A1","band_values":["NDVI","EVI","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b07","ViewZenith","SolarZenith","RelativeAzimuth"],"band_description":["Normalized Difference Vegetation Index","Enhanced Vegetation Index","Red surface reflectance","NIR surface reflectance","Blue surface reflectance","MIR surface reflectance","View zenith angle","Solar zenith angle","Relative azimuth angle"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD13A2","band_values":["NDVI","EVI","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b07","ViewZenith","SolarZenith","RelativeAzimuth"],"band_description":["16-day NDVI average","16-day EVI average","Surface reflectance band 1 (red)","Surface reflectance band 2 (near-infrared)","Surface reflectance band 3 (blue)","Surface reflectance band 7 (mid-infrared)","View zenith angle of VI Pixel","Sun zenith angle of VI pixel","Relative azimuth angle of VI pixel"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD13A3","band_values":["NDVI","EVI","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b07","ViewZenith","SolarZenith","RelativeAzimuth"],"band_description":["Monthly NDVI average","Monthly EVI average","Surface reflectance band 1 (red)","Surface reflectance band 2 (near-infrared)","Surface reflectance band 3 (blue)","Surface reflectance band 7 (mid-infrared)","View zenith angle of VI Pixel","Sun zenith angle of VI pixel","Relative azimuth angle of VI pixel"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD13Q1","band_values":["NDVI","EVI","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b07","ViewZenith","SolarZenith","RelativeAzimuth"],"band_description":["Normalized Difference Vegetation Index","Enhanced Vegetation Index","Red surface reflectance","NIR surface reflectance","Blue surface reflectance","MIR surface reflectance","View zenith angle","Solar zenith angle","Relative azimuth angle"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD14A1","band_values":["MaxFRP"],"band_description":["Maximum fire radiative power"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD15A2H","band_values":["Fpar_500m","Lai_500m","FparStdDev_500m","LaiStdDev_500m"],"band_description":["Fraction of Photosynthetically Active Radiation","Leaf Area Index","Standard deviation of FPAR","Standard deviation of LAI"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD16A2","band_values":["ET","LE","PET","PLE"],"band_description":["Total evapotranspiration","Average latent heat flux","Total potential evapotranspiration","Average potential latent heat flux"]},{"MISSION":"MODIS","PRODUCT":"061\/MOD17A2H","band_values":["Gpp","PsnNet"],"band_description":["Gross primary production","Net photosynthesis; GPP minus the maintenance respiration (MR)"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD08_M3","band_values":["Aerosol_Optical_Depth_Land_Ocean_Mean_Mean","Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean","Aerosol_Optical_Depth_Land_QA_Mean_Mean_470","Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470","Cirrus_Fraction_SWIR_FMean","Cirrus_Fraction_SWIR_FStd","Cloud_Optical_Thickness_Liquid_Log_Mean_Mean","Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean","Cloud_Optical_Thickness_Liquid_Mean_Uncertainty","Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty"],"band_description":["Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily mean\n","Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily standard deviation\n","Corrected aerosol optical depth (land) at 0.47 microns: mean of level-3 QA weighted mean","Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 weighted QA standard deviation","Cirrus area fraction: mean of daily fraction","Cirrus area fraction: standard deviation of daily fraction","Liquid water cloud optical thickness: mean of daily log mean","Liquid water cloud optical thickness: mean of daily log standard deviation","Liquid water cloud optical thickness: multi-day absolute\nuncertainty estimate derived from the daily absolute uncertainty\nestimate\n","Liquid water cloud optical thickness: multi-day absolute\nlog uncertainty estimate derived from the daily absolute log\nuncertainty estimate\n"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD09A1","band_values":["sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b04","sur_refl_b05","sur_refl_b06","sur_refl_b07","SolarZenith","ViewZenith","RelativeAzimuth"],"band_description":["Surface reflectance for band 1","Surface reflectance for band 2","Surface reflectance for band 3","Surface reflectance for band 4","Surface reflectance for band 5","Surface reflectance for band 6","Surface reflectance for band 7","MODIS Solar zenith angle","MODIS view zenith angle","MODIS relative azimuth angle"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD09GA","band_values":["SensorZenith","SensorAzimuth","Range","SolarZenith","SolarAzimuth","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b04","sur_refl_b05","sur_refl_b06","sur_refl_b07"],"band_description":["Sensor zenith angle","Sensor azimuth angle","Distance to sensor","Solar zenith angle","Solar azimuth angle","Surface reflectance for band 1","Surface reflectance for band 2","Surface reflectance for band 3","Surface reflectance for band 4","Surface reflectance for band 5","Surface reflectance for band 6","Surface reflectance for band 7"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD09GQ","band_values":["sur_refl_b01","sur_refl_b02","obscov"],"band_description":["Surface reflectance band 1","Surface reflectance for band 2","Observation coverage percent"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD09Q1","band_values":["sur_refl_b01","sur_refl_b02"],"band_description":["Surface reflectance band 1","Surface reflectance for band 2"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD10A1","band_values":["NDSI"],"band_description":["Raw NDSI (i.e. prior to screening). This value is\ncomputed for MOD10_L2 and retrieved with the corresponding observation\nof the day.\n"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD11A1","band_values":["LST_Day_1km","Day_view_time","LST_Night_1km","Night_view_time","Emis_31","Emis_32","Clear_day_cov","Clear_night_cov"],"band_description":["Daytime Land Surface Temperature","Local time of day observation","Nighttime Land Surface Temperature","Local time of night observation","Band 31 emissivity","Band 32 emissivity","Day clear-sky coverage","Night clear-sky coverage"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD11A2","band_values":["LST_Day_1km","Day_view_time","LST_Night_1km","Night_view_time","Emis_31","Emis_32"],"band_description":["Day land surface temperature","Local time of day observation","Night land surface temperature","Local time of night observation","Band 31 emissivity","Band 32 emissivity"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD13A1","band_values":["NDVI","EVI","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b07","ViewZenith","SolarZenith","RelativeAzimuth"],"band_description":["Normalized Difference Vegetation Index","Enhanced Vegetation Index","Red surface reflectance","NIR surface reflectance","Blue surface reflectance","MIR surface reflectance","View zenith angle","Solar zenith angle","Relative azimuth angle"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD13A2","band_values":["NDVI","EVI","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b07","ViewZenith","SolarZenith","RelativeAzimuth"],"band_description":["16-day NDVI average","16-day EVI average","Surface reflectance band 1 (red)","Surface reflectance band 2 (near-infrared)","Surface reflectance band 3 (blue)","Surface reflectance band 7 (mid-infrared)","View zenith angle of VI Pixel","Sun zenith angle of VI pixel","Relative azimuth angle of VI pixel"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD13Q1","band_values":["NDVI","EVI","sur_refl_b01","sur_refl_b02","sur_refl_b03","sur_refl_b07","ViewZenith","SolarZenith","RelativeAzimuth"],"band_description":["Normalized Difference Vegetation Index","Enhanced Vegetation Index","Red surface reflectance","NIR surface reflectance","Blue surface reflectance","MIR surface reflectance","View zenith angle","Solar zenith angle","Relative azimuth angle"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD14A1","band_values":["MaxFRP"],"band_description":["Maximum fire radiative power"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD15A2H","band_values":["Fpar_500m","Lai_500m","FparStdDev_500m","LaiStdDev_500m"],"band_description":["Fraction of Photosynthetically Active Radiation","Leaf Area Index","Standard deviation of FPAR","Standard deviation of LAI"]},{"MISSION":"MODIS","PRODUCT":"061\/MYD17A2H","band_values":["Gpp","PsnNet"],"band_description":["Gross primary production","Net photosynthesis; GPP minus the maintenance respiration (MR)"]},{"MISSION":"MODIS","PRODUCT":"MOD44W\/MOD44W_005_2000_02_24","band_values":null,"band_description":null},{"MISSION":"MODIS","PRODUCT":"NTSG\/MOD16A2\/105","band_values":["ET","LE","PET","PLE"],"band_description":["Evapotranspiration, aggregated for period of coverage.","Latent heat flux, averaged daily over the period of coverage.","Potential evapotranspiration, aggregated for period of coverage.","Potential Latent Heat Flux, averaged daily over the period ofcoverage."]},{"MISSION":"NASA","PRODUCT":"ASTER_GED\/AG100_003","band_values":["emissivity_band10","emissivity_band11","emissivity_band12","emissivity_band13","emissivity_band14","emissivity_sdev_band10","emissivity_sdev_band11","emissivity_sdev_band12","emissivity_sdev_band13","emissivity_sdev_band14","temperature","temperature_sdev","ndvi","ndvi_sdev"],"band_description":["Mean band 10","Mean band 11","Mean band 12","Mean band 13","Mean band 14","Standard deviation band 10","Standard deviation band 11","Standard deviation band 12","Standard deviation band 13","Standard deviation band 14","Temperature mean","Temperature standard deviation","NDVI mean","NDVI standard deviation"]},{"MISSION":"NASA","PRODUCT":"NASADEM_HGT\/001","band_values":null,"band_description":null},{"MISSION":"OpenLandMap","PRODUCT":"CLM\/CLM_LST_MOD11A2-DAYNIGHT_M\/v01","band_values":["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"],"band_description":["Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference","Long-term Land Surface Temperature monthly day-night difference"]},{"MISSION":"OpenLandMap","PRODUCT":"CLM\/CLM_LST_MOD11A2-DAY_M\/v01","band_values":["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"],"band_description":["Long-term Land Surface Temperature daytime monthly mean, January","Long-term Land Surface Temperature daytime monthly mean, February","Long-term Land Surface Temperature daytime monthly mean, March","Long-term Land Surface Temperature daytime monthly mean, April","Long-term Land Surface Temperature daytime monthly mean, May","Long-term Land Surface Temperature daytime monthly mean, June","Long-term Land Surface Temperature daytime monthly mean, July","Long-term Land Surface Temperature daytime monthly mean, August","Long-term Land Surface Temperature daytime monthly mean, September","Long-term Land Surface Temperature daytime monthly mean, October","Long-term Land Surface Temperature daytime monthly mean, November","Long-term Land Surface Temperature daytime monthly mean, December"]},{"MISSION":"OpenLandMap","PRODUCT":"CLM\/CLM_LST_MOD11A2-DAY_SD\/v01","band_values":["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"],"band_description":["Long-term Land Surface Temperature daytime monthly stddev, January","Long-term Land Surface Temperature daytime monthly stddev, February","Long-term Land Surface Temperature daytime monthly stddev, March","Long-term Land Surface Temperature daytime monthly stddev, April","Long-term Land Surface Temperature daytime monthly stddev, May","Long-term Land Surface Temperature daytime monthly stddev, June","Long-term Land Surface Temperature daytime monthly stddev, July","Long-term Land Surface Temperature daytime monthly stddev, August","Long-term Land Surface Temperature daytime monthly stddev, September","Long-term Land Surface Temperature daytime monthly stddev, October","Long-term Land Surface Temperature daytime monthly stddev, November","Long-term Land Surface Temperature daytime monthly stddev, December"]},{"MISSION":"TUBerlin","PRODUCT":"BigEarthNet\/v1","band_values":["B1","B2","B3","B4","B5","B6","B7","B8","B9","B10","B11","B12","B8A"],"band_description":["Aerosols","Blue","Green","Red","Red Edge 1","Red Edge 2","Red Edge 3","NIR","Water vapor","Cirrus","SWIR 1","SWIR 2","Red Edge 4"]},{"MISSION":"UMD","PRODUCT":"hansen\/global_forest_change_2022_v1_10","band_values":null,"band_description":null},{"MISSION":"UMT","PRODUCT":"NTSG\/v2\/LANDSAT\/GPP","band_values":["GPP"],"band_description":["16-day gross primary production"]},{"MISSION":"UMT","PRODUCT":"NTSG\/v2\/LANDSAT\/NPP","band_values":["annualNPP"],"band_description":["Annual net primary production"]},{"MISSION":"UMT","PRODUCT":"NTSG\/v2\/MODIS\/GPP","band_values":["GPP"],"band_description":["8-day gross primary production"]},{"MISSION":"UMT","PRODUCT":"NTSG\/v2\/MODIS\/NPP","band_values":["annualNPP"],"band_description":["Annual net primary productivity"]},{"MISSION":"UQ","PRODUCT":"murray\/Intertidal\/v1_1\/data_mask","band_values":null,"band_description":null},{"MISSION":"USGS","PRODUCT":"GMTED2010","band_values":null,"band_description":null},{"MISSION":"USGS","PRODUCT":"LIMA\/MOSAIC","band_values":null,"band_description":null},{"MISSION":"USGS","PRODUCT":"NLCD_RELEASES\/2019_REL\/RCMAP\/V5\/TRENDS","band_values":["annual_herbaceous_linear_model_pvalue","bare_ground_linear_model_pvalue","herbaceous_linear_model_pvalue","litter_linear_model_pvalue","sagebrush_linear_model_pvalue","shrub_linear_model_pvalue","non_sagebrush_shrub_linear_model_pvalue","perennial_herbaceous_linear_model_pvalue","tree_linear_model_pvalue","annual_herbaceous_linear_model_slope","bare_ground_linear_model_slope","herbaceous_linear_model_slope","litter_linear_model_slope","sagebrush_linear_model_slope","shrub_linear_model_slope","non_sagebrush_shrub_linear_model_slope","perennial_herbaceous_linear_model_slope","tree_linear_model_slope"],"band_description":["P-value of linear trends model for annual herbaceous time series","P-value of linear trends model for bare ground time series","P-value of linear trends model for herbaceous time series","P-value of linear trends model for litter time series","P-value of linear trends model for sagebrush time series","P-value of linear trends model for shrub time series","P-value of linear trends model for non sagebrush shrub time series","P-value of linear trends model for perennial herbaceous time series","P-value of linear trends model for tree time series","Slope of linear trends model for annual herbaceous time series","Slope of linear trends model for bare ground time series","Slope of linear trends model for herbaceous time series","Slope of linear trends model for litter time series","Slope of linear trends model for sagebrush time series","Slope of linear trends model for shrub time series","Slope of linear trends model for non sagebrush shrub time series","Slope of linear trends model for perennial herbaceous time series","Slope of linear trends model for tree time series"]},{"MISSION":"USGS","PRODUCT":"NLCD_RELEASES\/2019_REL\/RCMAP\/V5\/TRENDS_YEAR","band_values":["annual_herbaceous_segment_pvalue","bare_ground_segment_pvalue","herbaceous_segment_pvalue","litter_segment_pvalue","sagebrush_segment_pvalue","shrub_segment_pvalue","non_sagebrush_shrub_segment_pvalue","perennial_herbaceous_segment_pvalue","tree_segment_pvalue","annual_herbaceous_segment_slope","bare_ground_segment_slope","herbaceous_segment_slope","litter_segment_slope","sagebrush_segment_slope","shrub_segment_slope","non_sagebrush_shrub_segment_slope","perennial_herbaceous_segment_slope","tree_segment_slope"],"band_description":["P-values of structural break segments within each component of\nannual herbaceous per year\n","P-values of structural break segments within each component of\nbare ground per year\n","P-values of structural break segments within each component of\nherbaceous per year\n","P-values of structural break segments within each component of\nlitter per year\n","P-values of structural break segments within each component of\nsagebrush per year\n","P-values of structural break segments within each component of\nshrub per year\n","P-values of structural break segments within each component of\nnon sagebrush shrub per year\n","P-values of structural break segments within each component of\nperennial herbaceous per year\n","P-values of structural break segments within each component of\ntree per year\n","Annual slope of structural break segments within each component of\nannual herbaceous\n","Annual slope of structural break segments within each component of\nbare ground\n","Annual slope of structural break segments within each component of\nherbaceous\n","Annual slope of structural break segments within each component of\nlitter\n","Annual slope of structural break segments within each component of\nsagebrush\n","Annual slope of structural break segments within each component of\nshrub\n","Annual slope of structural break segments within each component of\nnon sagebrush shrub\n","Annual slope of structural break segments within each component of\nperennial herbaceous\n","Annual slope of structural break segments within each component of\ntree\n"]},{"MISSION":"USGS","PRODUCT":"NLCD_RELEASES\/2020_REL\/NALCMS","band_values":null,"band_description":null},{"MISSION":"USGS","PRODUCT":"SRTMGL1_003","band_values":null,"band_description":null},{"MISSION":"WRI","PRODUCT":"GFW\/FORMA\/alerts","band_values":null,"band_description":null},{"MISSION":"WRI","PRODUCT":"GFW\/FORMA\/thresholds","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level03","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level04","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level05","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level06","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level07","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level08","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level09","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level10","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level11","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroATLAS\/v1\/Basins\/level12","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/03CONDEM","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/03DIR","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/03VFDEM","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/15ACC","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/15CONDEM","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/15DIR","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/30ACC","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/30CONDEM","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/30DIR","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_1","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_2","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_3","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_4","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_5","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_6","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_7","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_8","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_9","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_10","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_11","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/Basins\/hybas_12","band_values":null,"band_description":null},{"MISSION":"WWF","PRODUCT":"HydroSHEDS\/v1\/FreeFlowingRivers","band_values":null,"band_description":null}]
+[
+    {
+        "MISSION": "ACA",
+        "PRODUCT": "reef_habitat/v2_0",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "AU",
+        "PRODUCT": "GA/DEM_1SEC/v10/DEM-H",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "AU",
+        "PRODUCT": "GA/DEM_1SEC/v10/DEM-S",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "CGIAR",
+        "PRODUCT": "SRTM90_V4",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "COPERNICUS",
+        "PRODUCT": "S2",
+        "band_values":
+        [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "B8",
+            "B8A",
+            "B9",
+            "B10",
+            "B11",
+            "B12"
+        ],
+        "band_description":
+        [
+            "Aerosols",
+            "Blue",
+            "Green",
+            "Red",
+            "Red Edge 1",
+            "Red Edge 2",
+            "Red Edge 3",
+            "NIR",
+            "Red Edge 4",
+            "Water vapor",
+            "Cirrus",
+            "SWIR 1",
+            "SWIR 2"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "COPERNICUS",
+        "PRODUCT": "S2_HARMONIZED",
+        "band_values":
+        [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "B8",
+            "B8A",
+            "B9",
+            "B10",
+            "B11",
+            "B12"
+        ],
+        "band_description":
+        [
+            "Aerosols",
+            "Blue",
+            "Green",
+            "Red",
+            "Red Edge 1",
+            "Red Edge 2",
+            "Red Edge 3",
+            "NIR",
+            "Red Edge 4",
+            "Water vapor",
+            "Cirrus",
+            "SWIR 1",
+            "SWIR 2"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "COPERNICUS",
+        "PRODUCT": "S2_SR",
+        "band_values":
+        [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "B8",
+            "B8A",
+            "B9",
+            "B11",
+            "B12",
+            "AOT",
+            "WVP"
+        ],
+        "band_description":
+        [
+            "Aerosols",
+            "Blue",
+            "Green",
+            "Red",
+            "Red Edge 1",
+            "Red Edge 2",
+            "Red Edge 3",
+            "NIR",
+            "Red Edge 4",
+            "Water vapor",
+            "SWIR 1",
+            "SWIR 2",
+            "Aerosol Optical Thickness",
+            "Water Vapor Pressure. The height the water would occupy if the vapor were condensed into\nliquid and spread evenly across the column.\n"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "COPERNICUS",
+        "PRODUCT": "S2_SR_HARMONIZED",
+        "band_values":
+        [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "B8",
+            "B8A",
+            "B9",
+            "B11",
+            "B12",
+            "AOT",
+            "WVP"
+        ],
+        "band_description":
+        [
+            "Aerosols",
+            "Blue",
+            "Green",
+            "Red",
+            "Red Edge 1",
+            "Red Edge 2",
+            "Red Edge 3",
+            "NIR",
+            "Red Edge 4",
+            "Water vapor",
+            "SWIR 1",
+            "SWIR 2",
+            "Aerosol Optical Thickness",
+            "Water Vapor Pressure. The height the water would occupy if the vapor were condensed into\nliquid and spread evenly across the column.\n"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "COPERNICUS",
+        "PRODUCT": "S3/OLCI",
+        "band_values":
+        [
+            "Oa01_radiance",
+            "Oa02_radiance",
+            "Oa03_radiance",
+            "Oa04_radiance",
+            "Oa05_radiance",
+            "Oa06_radiance",
+            "Oa07_radiance",
+            "Oa08_radiance",
+            "Oa09_radiance",
+            "Oa10_radiance",
+            "Oa11_radiance",
+            "Oa12_radiance",
+            "Oa13_radiance",
+            "Oa14_radiance",
+            "Oa15_radiance",
+            "Oa16_radiance",
+            "Oa17_radiance",
+            "Oa18_radiance",
+            "Oa19_radiance",
+            "Oa20_radiance",
+            "Oa21_radiance"
+        ],
+        "band_description":
+        [
+            "Aerosol correction, improved water constituent retrieval",
+            "Yellow substance and detrital pigments (turbidity)",
+            "Chl absorption max., biogeochemistry, vegetation",
+            "High Chl, other pigments",
+            "Chl, sediment, turbidity, red tide",
+            "Chlorophyll reference (Chl minimum)",
+            "Sediment loading",
+            "Chl (2^nd Chl abs. max.), sediment, yellow substance/vegetation",
+            "For improved fluorescence retrieval and to better\naccount for [smile](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-3-olci/level-2/smile-correction)\ntogether with the bands 665 and 680nm\n",
+            "Chl fluorescence peak, red edge",
+            "Chl fluorescence baseline, red edge transition",
+            "O2 absorption/clouds, vegetation",
+            "O2 absorption band/aerosol correction",
+            "Atmospheric correction",
+            "O2A used for cloud top pressure, fluorescence over land",
+            "Atmospheric correction/aerosol correction",
+            "Atmospheric correction/aerosol correction, clouds, pixel co-registration",
+            "Water vapor absorption reference band. Common reference\nband with SLSTR instrument. Vegetation monitoring\n",
+            "Water vapor absorption/vegetation monitoring (max. reflectance)",
+            "Water vapor absorption, atmospheric/aerosol correction",
+            "Atmospheric/aerosol correction"
+        ],
+        "band_scale":
+        [
+            0.01394646,
+            0.01338726,
+            0.01214812,
+            0.01151982,
+            0.01009526,
+            0.0123538,
+            0.00879161,
+            0.00876539,
+            0.0095103,
+            0.00773378,
+            0.00675523,
+            0.0071996,
+            0.00749684,
+            0.0086512,
+            0.00526779,
+            0.00530267,
+            0.00493004,
+            0.00549962,
+            0.00502847,
+            0.00326378,
+            0.00324118
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "DLR",
+        "PRODUCT": "WSF/WSF2015/v1",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "JCU",
+        "PRODUCT": "Murray/GIC/global_tidal_wetland_change/2019",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "JRC",
+        "PRODUCT": "GHSL/P2016/BUILT_LDSMT_GLOBE_V1",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "JRC",
+        "PRODUCT": "GSW1_4/GlobalSurfaceWater",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "JRC",
+        "PRODUCT": "GSW1_4/Metadata",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "JRC",
+        "PRODUCT": "GWIS/GlobFire/v2/DailyPerimeters",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table_collection"
+    },
+    {
+        "MISSION": "JRC",
+        "PRODUCT": "GWIS/GlobFire/v2/FinalPerimeters",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LC08/C02/T1_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B6",
+            "SR_B7",
+            "ST_B10",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (ultra blue, coastal aerosol) surface reflectance",
+            "Band 2 (blue) surface reflectance",
+            "Band 3 (green) surface reflectance",
+            "Band 4 (red) surface reflectance",
+            "Band 5 (near infrared) surface reflectance",
+            "Band 6 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "Band 10 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LC08/C02/T2_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B6",
+            "SR_B7",
+            "ST_B10",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (ultra blue, coastal aerosol) surface reflectance",
+            "Band 2 (blue) surface reflectance",
+            "Band 3 (green) surface reflectance",
+            "Band 4 (red) surface reflectance",
+            "Band 5 (near infrared) surface reflectance",
+            "Band 6 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "Band 10 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LC09/C02/T1_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B6",
+            "SR_B7",
+            "ST_B10",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (ultra blue, coastal aerosol) surface reflectance",
+            "Band 2 (blue) surface reflectance",
+            "Band 3 (green) surface reflectance",
+            "Band 4 (red) surface reflectance",
+            "Band 5 (near infrared) surface reflectance",
+            "Band 6 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "Band 10 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LC09/C02/T2_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B6",
+            "SR_B7",
+            "ST_B10",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (ultra blue, coastal aerosol) surface reflectance",
+            "Band 2 (blue) surface reflectance",
+            "Band 3 (green) surface reflectance",
+            "Band 4 (red) surface reflectance",
+            "Band 5 (near infrared) surface reflectance",
+            "Band 6 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "Band 10 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity of Band 10 estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LE07/C02/T1_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B7",
+            "SR_ATMOS_OPACITY",
+            "ST_B6",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (blue) surface reflectance",
+            "Band 2 (green) surface reflectance",
+            "Band 3 (red) surface reflectance",
+            "Band 4 (near infrared) surface reflectance",
+            "Band 5 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n",
+            "Band 6 surface temperature. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity estimated from ASTER GED. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.001,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LE07/C02/T2_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B7",
+            "SR_ATMOS_OPACITY",
+            "ST_B6",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (blue) surface reflectance",
+            "Band 2 (green) surface reflectance",
+            "Band 3 (red) surface reflectance",
+            "Band 4 (near infrared) surface reflectance",
+            "Band 5 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n",
+            "Band 6 surface temperature. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity estimated from ASTER GED. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.001,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LT04/C02/T1_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B7",
+            "SR_ATMOS_OPACITY",
+            "ST_B6",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (blue) surface reflectance",
+            "Band 2 (green) surface reflectance",
+            "Band 3 (red) surface reflectance",
+            "Band 4 (near infrared) surface reflectance",
+            "Band 5 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n",
+            "Band 6 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.001,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LT04/C02/T2_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B7",
+            "SR_ATMOS_OPACITY",
+            "ST_B6",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (blue) surface reflectance",
+            "Band 2 (green) surface reflectance",
+            "Band 3 (red) surface reflectance",
+            "Band 4 (near infrared) surface reflectance",
+            "Band 5 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n",
+            "Band 6 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.001,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LT05/C02/T1_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B7",
+            "SR_ATMOS_OPACITY",
+            "ST_B6",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (blue) surface reflectance",
+            "Band 2 (green) surface reflectance",
+            "Band 3 (red) surface reflectance",
+            "Band 4 (near infrared) surface reflectance",
+            "Band 5 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n",
+            "Band 6 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.001,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "LANDSAT",
+        "PRODUCT": "LT05/C02/T2_L2",
+        "band_values":
+        [
+            "SR_B1",
+            "SR_B2",
+            "SR_B3",
+            "SR_B4",
+            "SR_B5",
+            "SR_B7",
+            "SR_ATMOS_OPACITY",
+            "ST_B6",
+            "ST_ATRAN",
+            "ST_CDIST",
+            "ST_DRAD",
+            "ST_EMIS",
+            "ST_EMSD",
+            "ST_QA",
+            "ST_TRAD",
+            "ST_URAD"
+        ],
+        "band_description":
+        [
+            "Band 1 (blue) surface reflectance",
+            "Band 2 (green) surface reflectance",
+            "Band 3 (red) surface reflectance",
+            "Band 4 (near infrared) surface reflectance",
+            "Band 5 (shortwave infrared 1) surface reflectance",
+            "Band 7 (shortwave infrared 2) surface reflectance",
+            "A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n",
+            "Band 6 surface temperature.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Atmospheric Transmittance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Pixel distance to cloud.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Downwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Emissivity estimated from ASTER GED.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Emissivity standard deviation.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+            "Uncertainty of the Surface Temperature band.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Thermal band converted to radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+            "Upwelled Radiance.\nIf 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out."
+        ],
+        "band_scale":
+        [
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.0000275,
+            0.001,
+            0.00341802,
+            0.0001,
+            0.01,
+            0.001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "006/MOD44B",
+        "band_values":
+        [
+            "Percent_Tree_Cover_SD",
+            "Percent_NonVegetated_SD"
+        ],
+        "band_description":
+        [
+            "Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent tree cover data\nlayer\n",
+            "Standard deviation (SD) of the 30 models that were\nused to generate the pixel value in the percent non-vegetated\ndata layer\n"
+        ],
+        "band_scale":
+        [
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "006/MODOCGA",
+        "band_values":
+        [
+            "sur_refl_b08",
+            "sur_refl_b09",
+            "sur_refl_b10",
+            "sur_refl_b11",
+            "sur_refl_b12",
+            "sur_refl_b13",
+            "sur_refl_b14",
+            "sur_refl_b15",
+            "sur_refl_b16"
+        ],
+        "band_description":
+        [
+            "MODIS band 8 surface reflectance",
+            "MODIS band 9 surface reflectance",
+            "MODIS band 10 surface reflectance",
+            "MODIS band 11 surface reflectance",
+            "MODIS band 12 surface reflectance",
+            "MODIS band 13 surface reflectance",
+            "MODIS band 14 surface reflectance",
+            "MODIS band 15 surface reflectance",
+            "MODIS band 16 surface reflectance"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "006/MYDOCGA",
+        "band_values":
+        [
+            "sur_refl_b08",
+            "sur_refl_b09",
+            "sur_refl_b10",
+            "sur_refl_b11",
+            "sur_refl_b12",
+            "sur_refl_b13",
+            "sur_refl_b14",
+            "sur_refl_b15",
+            "sur_refl_b16"
+        ],
+        "band_description":
+        [
+            "MODIS band 8 surface reflectance",
+            "MODIS band 9 surface reflectance",
+            "MODIS band 10 surface reflectance",
+            "MODIS band 11 surface reflectance",
+            "MODIS band 12 surface reflectance",
+            "MODIS band 13 surface reflectance",
+            "MODIS band 14 surface reflectance",
+            "MODIS band 15 surface reflectance",
+            "MODIS band 16 surface reflectance"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD12Q2",
+        "band_values":
+        [
+            "EVI_Minimum_1",
+            "EVI_Minimum_2",
+            "EVI_Amplitude_1",
+            "EVI_Amplitude_2",
+            "EVI_Area_1",
+            "EVI_Area_2"
+        ],
+        "band_description":
+        [
+            "Segment minimum EVI2 value, cycle 1",
+            "Segment minimum EVI2 value, cycle 2",
+            "Segment maximum - minimum EVI2, cycle 1",
+            "Segment maximum - minimum EVI2, cycle 2",
+            "Sum of daily interpolated EVI2 from Greenup to Dormancy, cycle 1",
+            "Sum of daily interpolated EVI2 from Greenup to Dormancy, cycle 2"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.1,
+            0.1
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD15A3H",
+        "band_values":
+        [
+            "Fpar",
+            "Lai",
+            "FparStdDev",
+            "LaiStdDev"
+        ],
+        "band_description":
+        [
+            "FPAR absorbed by the green elements of a vegetation canopy",
+            "One-sided green leaf area per unit ground area in\nbroadleaf canopies; one-half the total needle surface area per\nunit ground area in coniferous canopies\n",
+            "Standard deviation of Fpar",
+            "Standard deviation for Lai"
+        ],
+        "band_scale":
+        [
+            0.01,
+            0.1,
+            0.01,
+            0.1
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD19A1_GRANULES",
+        "band_values":
+        [
+            "Sur_refl1",
+            "Sur_refl2",
+            "Sur_refl3",
+            "Sur_refl4",
+            "Sur_refl5",
+            "Sur_refl6",
+            "Sur_refl7",
+            "Sur_refl8",
+            "Sur_refl9",
+            "Sur_refl10",
+            "Sur_refl11",
+            "Sur_refl12",
+            "Sigma_BRFn1",
+            "Sigma_BRFn2",
+            "cosSZA",
+            "cosVZA",
+            "RelAZ",
+            "Scattering_Angle",
+            "SAZ",
+            "VAZ",
+            "Glint_Angle"
+        ],
+        "band_description":
+        [
+            "Surface reflectance at 500m for band 1.\n",
+            "Surface reflectance at 500m for band 2.\n",
+            "Surface reflectance at 500m for band 3.\n",
+            "Surface reflectance at 500m for band 4.\n",
+            "Surface reflectance at 500m for band 5.\n",
+            "Surface reflectance at 500m for band 6.\n",
+            "Surface reflectance at 500m for band 7.\n",
+            "Surface reflectance at 1km for band 8.\n",
+            "Surface reflectance at 1km for band 9.\n",
+            "Surface reflectance at 1km for band 10.\n",
+            "Surface reflectance at 1km for band 11.\n",
+            "Surface reflectance at 1km for band 12.\n",
+            "BRFn uncertainty over time at 1km, for band 1\n",
+            "BRFn uncertainty over time at 1km, for band 2",
+            "Cosine of Solar zenith angle (5 km resulution)",
+            "Cosine view zenith angle (5 km resolution)",
+            "Relative azimuth angle (5 km resolution)",
+            "Scattering angle (5 km resolution)",
+            "Solar Azimuth Angle (5 km resolution)",
+            "View Azimuth Angle (5 km resolution)",
+            "Glint angle (5 km resolution)"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD19A2_GRANULES",
+        "band_values":
+        [
+            "Optical_Depth_047",
+            "Optical_Depth_055",
+            "AOD_Uncertainty",
+            "Column_WV",
+            "AngstromExp_470-780",
+            "cosSZA",
+            "cosVZA",
+            "RelAZ",
+            "Scattering_Angle",
+            "Glint_Angle"
+        ],
+        "band_description":
+        [
+            "Aerosol optical depth over land retrieved in the MODIS Blue band (0.47\n&mu;m). AOD is not received at high altitude (greater than 4.2 km)\nexcept when smoke or dust is detected; rather, we report a static\nvalue of 0.02 used for atmospheric correction.\n",
+            "Aerosol optical depth over land retrieved in the MODIS Green band\n(0.55 &mu;m).\n",
+            "AOD uncertainty based on blue-band surface brightness (reflectance)\n",
+            "Column water vapor over land, retrieved from MODIS near-IR bands at\n0.94 &mu;m. When reported for cloudy pixels, it represents water vapor\nabove the cloud.\n",
+            "Angstrom exponent 470-780nm over the ocean",
+            "Cosine of solar zenith angle (5 km resolution)",
+            "Cosine view zenith angle (5 km resolution)",
+            "Relative azimuth angle (5 km resolution)",
+            "Scattering angle (5 km resolution)",
+            "Glint angle (5 km resolution)"
+        ],
+        "band_scale":
+        [
+            0.001,
+            0.001,
+            0.0001,
+            0.001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD43A1",
+        "band_values":
+        [
+            "BRDF_Albedo_Parameters_Band1_iso",
+            "BRDF_Albedo_Parameters_Band1_vol",
+            "BRDF_Albedo_Parameters_Band1_geo",
+            "BRDF_Albedo_Parameters_Band2_iso",
+            "BRDF_Albedo_Parameters_Band2_vol",
+            "BRDF_Albedo_Parameters_Band2_geo",
+            "BRDF_Albedo_Parameters_Band3_iso",
+            "BRDF_Albedo_Parameters_Band3_vol",
+            "BRDF_Albedo_Parameters_Band3_geo",
+            "BRDF_Albedo_Parameters_Band4_iso",
+            "BRDF_Albedo_Parameters_Band4_vol",
+            "BRDF_Albedo_Parameters_Band4_geo",
+            "BRDF_Albedo_Parameters_Band5_iso",
+            "BRDF_Albedo_Parameters_Band5_vol",
+            "BRDF_Albedo_Parameters_Band5_geo",
+            "BRDF_Albedo_Parameters_Band6_iso",
+            "BRDF_Albedo_Parameters_Band6_vol",
+            "BRDF_Albedo_Parameters_Band6_geo",
+            "BRDF_Albedo_Parameters_Band7_iso",
+            "BRDF_Albedo_Parameters_Band7_vol",
+            "BRDF_Albedo_Parameters_Band7_geo",
+            "BRDF_Albedo_Parameters_vis_iso",
+            "BRDF_Albedo_Parameters_vis_vol",
+            "BRDF_Albedo_Parameters_vis_geo",
+            "BRDF_Albedo_Parameters_nir_iso",
+            "BRDF_Albedo_Parameters_nir_vol",
+            "BRDF_Albedo_Parameters_nir_geo",
+            "BRDF_Albedo_Parameters_shortwave_iso",
+            "BRDF_Albedo_Parameters_shortwave_vol",
+            "BRDF_Albedo_Parameters_shortwave_geo"
+        ],
+        "band_description":
+        [
+            "BDRF/Albedo isotropic parameter for band 1",
+            "BDRF/Albedo volumetric parameter for band 1",
+            "BDRF/Albedo geometric parameter for band 1",
+            "BDRF/Albedo isotropic parameter for band 2",
+            "BDRF/Albedo volumetric parameter for band 2",
+            "BDRF/Albedo geometric parameter for band 2",
+            "BDRF/Albedo isotropic parameter for band 3",
+            "BDRF/Albedo volumetric parameter for band 3",
+            "BDRF/Albedo geometric parameter for band 3",
+            "BDRF/Albedo isotropic parameter for band 4",
+            "BDRF/Albedo volumetric parameter for band 4",
+            "BDRF/Albedo geometric parameter for band 4",
+            "BDRF/Albedo isotropic parameter for band 5",
+            "BDRF/Albedo volumetric parameter for band 5",
+            "BDRF/Albedo geometric parameter for band 5",
+            "BDRF/Albedo isotropic parameter for band 6",
+            "BDRF/Albedo volumetric parameter for band 6",
+            "BDRF/Albedo geometric parameter for band 6",
+            "BDRF/Albedo isotropic parameter for band 7",
+            "BDRF/Albedo volumetric parameter for band 7",
+            "BDRF/Albedo geometric parameter for band 7",
+            "BDRF/Albedo isotropic parameter for the visible band",
+            "BDRF/Albedo volumetric parameter for the visible band",
+            "BDRF/Albedo geometric parameter for the visible band",
+            "BDRF/Albedo isotropic parameter for the NIR band",
+            "BDRF/Albedo volumetric parameter for the NIR band",
+            "BDRF/Albedo geometric parameter for the NIR band",
+            "BDRF/Albedo isotropic parameter for the shortwave band",
+            "BDRF/Albedo volumetric parameter for the shortwave band",
+            "BDRF/Albedo geometric parameter for the shortwave band"
+        ],
+        "band_scale":
+        [
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD43A2",
+        "band_values":
+        [
+            "BRDF_Albedo_Uncertainty"
+        ],
+        "band_description":
+        [
+            "BRDF inversion information"
+        ],
+        "band_scale":
+        [
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD43A3",
+        "band_values":
+        [
+            "Albedo_BSA_Band1",
+            "Albedo_BSA_Band2",
+            "Albedo_BSA_Band3",
+            "Albedo_BSA_Band4",
+            "Albedo_BSA_Band5",
+            "Albedo_BSA_Band6",
+            "Albedo_BSA_Band7",
+            "Albedo_BSA_vis",
+            "Albedo_BSA_nir",
+            "Albedo_BSA_shortwave",
+            "Albedo_WSA_Band1",
+            "Albedo_WSA_Band2",
+            "Albedo_WSA_Band3",
+            "Albedo_WSA_Band4",
+            "Albedo_WSA_Band5",
+            "Albedo_WSA_Band6",
+            "Albedo_WSA_Band7",
+            "Albedo_WSA_vis",
+            "Albedo_WSA_nir",
+            "Albedo_WSA_shortwave"
+        ],
+        "band_description":
+        [
+            "Black-sky albedo for band 1",
+            "Black-sky albedo for band 2",
+            "Black-sky albedo for band 3",
+            "Black-sky albedo for band 4",
+            "Black-sky albedo for band 5",
+            "Black-sky albedo for band 6",
+            "Black-sky albedo for band 7",
+            "Black-sky albedo for visible brodband",
+            "Black-sky albedo for NIR broadband",
+            "Black-sky albedo for shortwave broadband",
+            "White-sky albedo for band 1",
+            "White-sky albedo for band 2",
+            "White-sky albedo for band 3",
+            "White-sky albedo for band 4",
+            "White-sky albedo for band 5",
+            "White-sky albedo for band 6",
+            "White-sky albedo for band 7",
+            "White-sky albedo for visible broadband",
+            "White-sky albedo for NIR broadband",
+            "White-sky albedo for shortwave broadband"
+        ],
+        "band_scale":
+        [
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD43A4",
+        "band_values":
+        [
+            "Nadir_Reflectance_Band1",
+            "Nadir_Reflectance_Band2",
+            "Nadir_Reflectance_Band3",
+            "Nadir_Reflectance_Band4",
+            "Nadir_Reflectance_Band5",
+            "Nadir_Reflectance_Band6",
+            "Nadir_Reflectance_Band7"
+        ],
+        "band_description":
+        [
+            "NBAR at local solar noon for band 1",
+            "NBAR at local solar noon for band 2",
+            "NBAR at local solar noon for band 3",
+            "NBAR at local solar noon for band 4",
+            "NBAR at local solar noon for band 5",
+            "NBAR at local solar noon for band 6",
+            "NBAR at local solar noon for band 7"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MCD43C3",
+        "band_values":
+        [
+            "Albedo_BSA_Band1",
+            "Albedo_BSA_Band2",
+            "Albedo_BSA_Band3",
+            "Albedo_BSA_Band4",
+            "Albedo_BSA_Band5",
+            "Albedo_BSA_Band6",
+            "Albedo_BSA_Band7",
+            "Albedo_BSA_vis",
+            "Albedo_BSA_nir",
+            "Albedo_BSA_shortwave",
+            "Albedo_WSA_Band1",
+            "Albedo_WSA_Band2",
+            "Albedo_WSA_Band3",
+            "Albedo_WSA_Band4",
+            "Albedo_WSA_Band5",
+            "Albedo_WSA_Band6",
+            "Albedo_WSA_Band7",
+            "Albedo_WSA_vis",
+            "Albedo_WSA_nir",
+            "Albedo_WSA_shortwave",
+            "BRDF_Albedo_Uncertainty"
+        ],
+        "band_description":
+        [
+            "Black-sky albedo for band 1",
+            "Black-sky albedo for band 2",
+            "Black-sky albedo for band 3",
+            "Black-sky albedo for band 4",
+            "Black-sky albedo for band 5",
+            "Black-sky albedo for band 6",
+            "Black-sky albedo for band 7",
+            "Black-sky albedo for visible brodband",
+            "Black-sky albedo for NIR broadband",
+            "Black-sky albedo for shortwave broadband",
+            "White-sky albedo for band 1",
+            "White-sky albedo for band 2",
+            "White-sky albedo for band 3",
+            "White-sky albedo for band 4",
+            "White-sky albedo for band 5",
+            "White-sky albedo for band 6",
+            "White-sky albedo for band 7",
+            "White-sky albedo for visible broadband",
+            "White-sky albedo for NIR broadband",
+            "White-sky albedo for shortwave broadband",
+            "BRDF inversion information. Weights of determination (WoD) of the white\nsky albedo (see Lucht, W., & Lewis, P. (2000). Theoretical noise\nsensitivity of BRDF and albedo retrieval from the EOS-MODIS and MISR\nsensors with respect to angular sampling. International Journal of\nRemote Sensing, 21(1), 81-98). WoDs give a measure of the\nuncertainty due to the angular sampling of the inputs available for each\nretrieval.\n"
+        ],
+        "band_scale":
+        [
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD08_M3",
+        "band_values":
+        [
+            "Aerosol_Optical_Depth_Land_Ocean_Mean_Mean",
+            "Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean",
+            "Aerosol_Optical_Depth_Land_QA_Mean_Mean_470",
+            "Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470",
+            "Cirrus_Fraction_SWIR_FMean",
+            "Cirrus_Fraction_SWIR_FStd",
+            "Cloud_Optical_Thickness_Liquid_Log_Mean_Mean",
+            "Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean",
+            "Cloud_Optical_Thickness_Liquid_Mean_Uncertainty",
+            "Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty"
+        ],
+        "band_description":
+        [
+            "Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily mean\n",
+            "Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily standard deviation\n",
+            "Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 QA weighted mean",
+            "Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 weighted QA standard deviation",
+            "Cirrus area fraction: mean of daily fraction",
+            "Cirrus area fraction: standard deviation of daily fraction",
+            "Liquid water cloud optical thickness: mean of daily log mean",
+            "Liquid water cloud optical thickness: mean of daily log standard deviation",
+            "Liquid water cloud optical thickness: multi-day absolute\nuncertainty estimate derived from the daily absolute uncertainty\nestimate\n",
+            "Liquid water cloud optical thickness: multi-day absolute\nlog uncertainty estimate derived from the daily absolute log\nuncertainty estimate\n"
+        ],
+        "band_scale":
+        [
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.0001,
+            0.0001,
+            0.001,
+            0.001,
+            0.01,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD09A1",
+        "band_values":
+        [
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b04",
+            "sur_refl_b05",
+            "sur_refl_b06",
+            "sur_refl_b07",
+            "SolarZenith",
+            "ViewZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "Surface reflectance for band 1",
+            "Surface reflectance for band 2",
+            "Surface reflectance for band 3",
+            "Surface reflectance for band 4",
+            "Surface reflectance for band 5",
+            "Surface reflectance for band 6",
+            "Surface reflectance for band 7",
+            "MODIS Solar zenith angle",
+            "MODIS view zenith angle",
+            "MODIS relative azimuth angle"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD09GA",
+        "band_values":
+        [
+            "SensorZenith",
+            "SensorAzimuth",
+            "Range",
+            "SolarZenith",
+            "SolarAzimuth",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b04",
+            "sur_refl_b05",
+            "sur_refl_b06",
+            "sur_refl_b07"
+        ],
+        "band_description":
+        [
+            "Sensor zenith angle",
+            "Sensor azimuth angle",
+            "Distance to sensor",
+            "Solar zenith angle",
+            "Solar azimuth angle",
+            "Surface reflectance for band 1",
+            "Surface reflectance for band 2",
+            "Surface reflectance for band 3",
+            "Surface reflectance for band 4",
+            "Surface reflectance for band 5",
+            "Surface reflectance for band 6",
+            "Surface reflectance for band 7"
+        ],
+        "band_scale":
+        [
+            0.01,
+            0.01,
+            25,
+            0.01,
+            0.01,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD09GQ",
+        "band_values":
+        [
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "obscov"
+        ],
+        "band_description":
+        [
+            "Surface reflectance band 1",
+            "Surface reflectance for band 2",
+            "Observation coverage percent"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD09Q1",
+        "band_values":
+        [
+            "sur_refl_b01",
+            "sur_refl_b02"
+        ],
+        "band_description":
+        [
+            "Surface reflectance band 1",
+            "Surface reflectance for band 2"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD10A1",
+        "band_values":
+        [
+            "NDSI"
+        ],
+        "band_description":
+        [
+            "Raw NDSI (i.e. prior to screening). This value is\ncomputed for MOD10_L2 and retrieved with the corresponding observation\nof the day.\n"
+        ],
+        "band_scale":
+        [
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD11A1",
+        "band_values":
+        [
+            "LST_Day_1km",
+            "Day_view_time",
+            "LST_Night_1km",
+            "Night_view_time",
+            "Emis_31",
+            "Emis_32",
+            "Clear_day_cov",
+            "Clear_night_cov"
+        ],
+        "band_description":
+        [
+            "Daytime Land Surface Temperature",
+            "Local time of day observation",
+            "Nighttime Land Surface Temperature",
+            "Local time of night observation",
+            "Band 31 emissivity",
+            "Band 32 emissivity",
+            "Day clear-sky coverage",
+            "Night clear-sky coverage"
+        ],
+        "band_scale":
+        [
+            0.02,
+            0.1,
+            0.02,
+            0.1,
+            0.002,
+            0.002,
+            0.0005,
+            0.0005
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD11A2",
+        "band_values":
+        [
+            "LST_Day_1km",
+            "Day_view_time",
+            "LST_Night_1km",
+            "Night_view_time",
+            "Emis_31",
+            "Emis_32"
+        ],
+        "band_description":
+        [
+            "Day land surface temperature",
+            "Local time of day observation",
+            "Night land surface temperature",
+            "Local time of night observation",
+            "Band 31 emissivity",
+            "Band 32 emissivity"
+        ],
+        "band_scale":
+        [
+            0.02,
+            0.1,
+            0.02,
+            0.1,
+            0.002,
+            0.002
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD13A1",
+        "band_values":
+        [
+            "NDVI",
+            "EVI",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b07",
+            "ViewZenith",
+            "SolarZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "Normalized Difference Vegetation Index",
+            "Enhanced Vegetation Index",
+            "Red surface reflectance",
+            "NIR surface reflectance",
+            "Blue surface reflectance",
+            "MIR surface reflectance",
+            "View zenith angle",
+            "Solar zenith angle",
+            "Relative azimuth angle"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD13A2",
+        "band_values":
+        [
+            "NDVI",
+            "EVI",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b07",
+            "ViewZenith",
+            "SolarZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "16-day NDVI average",
+            "16-day EVI average",
+            "Surface reflectance band 1 (red)",
+            "Surface reflectance band 2 (near-infrared)",
+            "Surface reflectance band 3 (blue)",
+            "Surface reflectance band 7 (mid-infrared)",
+            "View zenith angle of VI Pixel",
+            "Sun zenith angle of VI pixel",
+            "Relative azimuth angle of VI pixel"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD13A3",
+        "band_values":
+        [
+            "NDVI",
+            "EVI",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b07",
+            "ViewZenith",
+            "SolarZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "Monthly NDVI average",
+            "Monthly EVI average",
+            "Surface reflectance band 1 (red)",
+            "Surface reflectance band 2 (near-infrared)",
+            "Surface reflectance band 3 (blue)",
+            "Surface reflectance band 7 (mid-infrared)",
+            "View zenith angle of VI Pixel",
+            "Sun zenith angle of VI pixel",
+            "Relative azimuth angle of VI pixel"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD13Q1",
+        "band_values":
+        [
+            "NDVI",
+            "EVI",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b07",
+            "ViewZenith",
+            "SolarZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "Normalized Difference Vegetation Index",
+            "Enhanced Vegetation Index",
+            "Red surface reflectance",
+            "NIR surface reflectance",
+            "Blue surface reflectance",
+            "MIR surface reflectance",
+            "View zenith angle",
+            "Solar zenith angle",
+            "Relative azimuth angle"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD14A1",
+        "band_values":
+        [
+            "MaxFRP"
+        ],
+        "band_description":
+        [
+            "Maximum fire radiative power"
+        ],
+        "band_scale":
+        [
+            0.1
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD15A2H",
+        "band_values":
+        [
+            "Fpar_500m",
+            "Lai_500m",
+            "FparStdDev_500m",
+            "LaiStdDev_500m"
+        ],
+        "band_description":
+        [
+            "Fraction of Photosynthetically Active Radiation",
+            "Leaf Area Index",
+            "Standard deviation of FPAR",
+            "Standard deviation of LAI"
+        ],
+        "band_scale":
+        [
+            0.01,
+            0.1,
+            0.01,
+            0.1
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD16A2",
+        "band_values":
+        [
+            "ET",
+            "LE",
+            "PET",
+            "PLE"
+        ],
+        "band_description":
+        [
+            "Total evapotranspiration",
+            "Average latent heat flux",
+            "Total potential evapotranspiration",
+            "Average potential latent heat flux"
+        ],
+        "band_scale":
+        [
+            0.1,
+            10000,
+            0.1,
+            10000
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MOD17A2H",
+        "band_values":
+        [
+            "Gpp",
+            "PsnNet"
+        ],
+        "band_description":
+        [
+            "Gross primary production",
+            "Net photosynthesis; GPP minus the maintenance respiration (MR)"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD08_M3",
+        "band_values":
+        [
+            "Aerosol_Optical_Depth_Land_Ocean_Mean_Mean",
+            "Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean",
+            "Aerosol_Optical_Depth_Land_QA_Mean_Mean_470",
+            "Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470",
+            "Cirrus_Fraction_SWIR_FMean",
+            "Cirrus_Fraction_SWIR_FStd",
+            "Cloud_Optical_Thickness_Liquid_Log_Mean_Mean",
+            "Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean",
+            "Cloud_Optical_Thickness_Liquid_Mean_Uncertainty",
+            "Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty"
+        ],
+        "band_description":
+        [
+            "Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily mean\n",
+            "Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily standard deviation\n",
+            "Corrected aerosol optical depth (land) at 0.47 microns: mean of level-3 QA weighted mean",
+            "Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 weighted QA standard deviation",
+            "Cirrus area fraction: mean of daily fraction",
+            "Cirrus area fraction: standard deviation of daily fraction",
+            "Liquid water cloud optical thickness: mean of daily log mean",
+            "Liquid water cloud optical thickness: mean of daily log standard deviation",
+            "Liquid water cloud optical thickness: multi-day absolute\nuncertainty estimate derived from the daily absolute uncertainty\nestimate\n",
+            "Liquid water cloud optical thickness: multi-day absolute\nlog uncertainty estimate derived from the daily absolute log\nuncertainty estimate\n"
+        ],
+        "band_scale":
+        [
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.0001,
+            0.0001,
+            0.001,
+            0.001,
+            0.01,
+            0.001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD09A1",
+        "band_values":
+        [
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b04",
+            "sur_refl_b05",
+            "sur_refl_b06",
+            "sur_refl_b07",
+            "SolarZenith",
+            "ViewZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "Surface reflectance for band 1",
+            "Surface reflectance for band 2",
+            "Surface reflectance for band 3",
+            "Surface reflectance for band 4",
+            "Surface reflectance for band 5",
+            "Surface reflectance for band 6",
+            "Surface reflectance for band 7",
+            "MODIS Solar zenith angle",
+            "MODIS view zenith angle",
+            "MODIS relative azimuth angle"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD09GA",
+        "band_values":
+        [
+            "SensorZenith",
+            "SensorAzimuth",
+            "Range",
+            "SolarZenith",
+            "SolarAzimuth",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b04",
+            "sur_refl_b05",
+            "sur_refl_b06",
+            "sur_refl_b07"
+        ],
+        "band_description":
+        [
+            "Sensor zenith angle",
+            "Sensor azimuth angle",
+            "Distance to sensor",
+            "Solar zenith angle",
+            "Solar azimuth angle",
+            "Surface reflectance for band 1",
+            "Surface reflectance for band 2",
+            "Surface reflectance for band 3",
+            "Surface reflectance for band 4",
+            "Surface reflectance for band 5",
+            "Surface reflectance for band 6",
+            "Surface reflectance for band 7"
+        ],
+        "band_scale":
+        [
+            0.01,
+            0.01,
+            25,
+            0.01,
+            0.01,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD09GQ",
+        "band_values":
+        [
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "obscov"
+        ],
+        "band_description":
+        [
+            "Surface reflectance band 1",
+            "Surface reflectance for band 2",
+            "Observation coverage percent"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD09Q1",
+        "band_values":
+        [
+            "sur_refl_b01",
+            "sur_refl_b02"
+        ],
+        "band_description":
+        [
+            "Surface reflectance band 1",
+            "Surface reflectance for band 2"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD10A1",
+        "band_values":
+        [
+            "NDSI"
+        ],
+        "band_description":
+        [
+            "Raw NDSI (i.e. prior to screening). This value is\ncomputed for MOD10_L2 and retrieved with the corresponding observation\nof the day.\n"
+        ],
+        "band_scale":
+        [
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD11A1",
+        "band_values":
+        [
+            "LST_Day_1km",
+            "Day_view_time",
+            "LST_Night_1km",
+            "Night_view_time",
+            "Emis_31",
+            "Emis_32",
+            "Clear_day_cov",
+            "Clear_night_cov"
+        ],
+        "band_description":
+        [
+            "Daytime Land Surface Temperature",
+            "Local time of day observation",
+            "Nighttime Land Surface Temperature",
+            "Local time of night observation",
+            "Band 31 emissivity",
+            "Band 32 emissivity",
+            "Day clear-sky coverage",
+            "Night clear-sky coverage"
+        ],
+        "band_scale":
+        [
+            0.02,
+            0.1,
+            0.02,
+            0.1,
+            0.002,
+            0.002,
+            0.0005,
+            0.0005
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD11A2",
+        "band_values":
+        [
+            "LST_Day_1km",
+            "Day_view_time",
+            "LST_Night_1km",
+            "Night_view_time",
+            "Emis_31",
+            "Emis_32"
+        ],
+        "band_description":
+        [
+            "Day land surface temperature",
+            "Local time of day observation",
+            "Night land surface temperature",
+            "Local time of night observation",
+            "Band 31 emissivity",
+            "Band 32 emissivity"
+        ],
+        "band_scale":
+        [
+            0.02,
+            0.1,
+            0.02,
+            0.1,
+            0.002,
+            0.002
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD13A1",
+        "band_values":
+        [
+            "NDVI",
+            "EVI",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b07",
+            "ViewZenith",
+            "SolarZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "Normalized Difference Vegetation Index",
+            "Enhanced Vegetation Index",
+            "Red surface reflectance",
+            "NIR surface reflectance",
+            "Blue surface reflectance",
+            "MIR surface reflectance",
+            "View zenith angle",
+            "Solar zenith angle",
+            "Relative azimuth angle"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD13A2",
+        "band_values":
+        [
+            "NDVI",
+            "EVI",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b07",
+            "ViewZenith",
+            "SolarZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "16-day NDVI average",
+            "16-day EVI average",
+            "Surface reflectance band 1 (red)",
+            "Surface reflectance band 2 (near-infrared)",
+            "Surface reflectance band 3 (blue)",
+            "Surface reflectance band 7 (mid-infrared)",
+            "View zenith angle of VI Pixel",
+            "Sun zenith angle of VI pixel",
+            "Relative azimuth angle of VI pixel"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD13Q1",
+        "band_values":
+        [
+            "NDVI",
+            "EVI",
+            "sur_refl_b01",
+            "sur_refl_b02",
+            "sur_refl_b03",
+            "sur_refl_b07",
+            "ViewZenith",
+            "SolarZenith",
+            "RelativeAzimuth"
+        ],
+        "band_description":
+        [
+            "Normalized Difference Vegetation Index",
+            "Enhanced Vegetation Index",
+            "Red surface reflectance",
+            "NIR surface reflectance",
+            "Blue surface reflectance",
+            "MIR surface reflectance",
+            "View zenith angle",
+            "Solar zenith angle",
+            "Relative azimuth angle"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD14A1",
+        "band_values":
+        [
+            "MaxFRP"
+        ],
+        "band_description":
+        [
+            "Maximum fire radiative power"
+        ],
+        "band_scale":
+        [
+            0.1
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD15A2H",
+        "band_values":
+        [
+            "Fpar_500m",
+            "Lai_500m",
+            "FparStdDev_500m",
+            "LaiStdDev_500m"
+        ],
+        "band_description":
+        [
+            "Fraction of Photosynthetically Active Radiation",
+            "Leaf Area Index",
+            "Standard deviation of FPAR",
+            "Standard deviation of LAI"
+        ],
+        "band_scale":
+        [
+            0.01,
+            0.1,
+            0.01,
+            0.1
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "061/MYD17A2H",
+        "band_values":
+        [
+            "Gpp",
+            "PsnNet"
+        ],
+        "band_description":
+        [
+            "Gross primary production",
+            "Net photosynthesis; GPP minus the maintenance respiration (MR)"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "MOD44W/MOD44W_005_2000_02_24",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "MODIS",
+        "PRODUCT": "NTSG/MOD16A2/105",
+        "band_values":
+        [
+            "ET",
+            "LE",
+            "PET",
+            "PLE"
+        ],
+        "band_description":
+        [
+            "Evapotranspiration, aggregated for period of coverage.",
+            "Latent heat flux, averaged daily over the period of coverage.",
+            "Potential evapotranspiration, aggregated for period of coverage.",
+            "Potential Latent Heat Flux, averaged daily over the period ofcoverage."
+        ],
+        "band_scale":
+        [
+            0.1,
+            10000,
+            0.1,
+            10000
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "NASA",
+        "PRODUCT": "ASTER_GED/AG100_003",
+        "band_values":
+        [
+            "emissivity_band10",
+            "emissivity_band11",
+            "emissivity_band12",
+            "emissivity_band13",
+            "emissivity_band14",
+            "emissivity_sdev_band10",
+            "emissivity_sdev_band11",
+            "emissivity_sdev_band12",
+            "emissivity_sdev_band13",
+            "emissivity_sdev_band14",
+            "temperature",
+            "temperature_sdev",
+            "ndvi",
+            "ndvi_sdev"
+        ],
+        "band_description":
+        [
+            "Mean band 10",
+            "Mean band 11",
+            "Mean band 12",
+            "Mean band 13",
+            "Mean band 14",
+            "Standard deviation band 10",
+            "Standard deviation band 11",
+            "Standard deviation band 12",
+            "Standard deviation band 13",
+            "Standard deviation band 14",
+            "Temperature mean",
+            "Temperature standard deviation",
+            "NDVI mean",
+            "NDVI standard deviation"
+        ],
+        "band_scale":
+        [
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.01,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "NASA",
+        "PRODUCT": "NASADEM_HGT/001",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "OpenLandMap",
+        "PRODUCT": "CLM/CLM_LST_MOD11A2-DAYNIGHT_M/v01",
+        "band_values":
+        [
+            "jan",
+            "feb",
+            "mar",
+            "apr",
+            "may",
+            "jun",
+            "jul",
+            "aug",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+        ],
+        "band_description":
+        [
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference",
+            "Long-term Land Surface Temperature monthly day-night difference"
+        ],
+        "band_scale":
+        [
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02
+        ],
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "OpenLandMap",
+        "PRODUCT": "CLM/CLM_LST_MOD11A2-DAY_M/v01",
+        "band_values":
+        [
+            "jan",
+            "feb",
+            "mar",
+            "apr",
+            "may",
+            "jun",
+            "jul",
+            "aug",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+        ],
+        "band_description":
+        [
+            "Long-term Land Surface Temperature daytime monthly mean, January",
+            "Long-term Land Surface Temperature daytime monthly mean, February",
+            "Long-term Land Surface Temperature daytime monthly mean, March",
+            "Long-term Land Surface Temperature daytime monthly mean, April",
+            "Long-term Land Surface Temperature daytime monthly mean, May",
+            "Long-term Land Surface Temperature daytime monthly mean, June",
+            "Long-term Land Surface Temperature daytime monthly mean, July",
+            "Long-term Land Surface Temperature daytime monthly mean, August",
+            "Long-term Land Surface Temperature daytime monthly mean, September",
+            "Long-term Land Surface Temperature daytime monthly mean, October",
+            "Long-term Land Surface Temperature daytime monthly mean, November",
+            "Long-term Land Surface Temperature daytime monthly mean, December"
+        ],
+        "band_scale":
+        [
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02
+        ],
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "OpenLandMap",
+        "PRODUCT": "CLM/CLM_LST_MOD11A2-DAY_SD/v01",
+        "band_values":
+        [
+            "jan",
+            "feb",
+            "mar",
+            "apr",
+            "may",
+            "jun",
+            "jul",
+            "aug",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+        ],
+        "band_description":
+        [
+            "Long-term Land Surface Temperature daytime monthly stddev, January",
+            "Long-term Land Surface Temperature daytime monthly stddev, February",
+            "Long-term Land Surface Temperature daytime monthly stddev, March",
+            "Long-term Land Surface Temperature daytime monthly stddev, April",
+            "Long-term Land Surface Temperature daytime monthly stddev, May",
+            "Long-term Land Surface Temperature daytime monthly stddev, June",
+            "Long-term Land Surface Temperature daytime monthly stddev, July",
+            "Long-term Land Surface Temperature daytime monthly stddev, August",
+            "Long-term Land Surface Temperature daytime monthly stddev, September",
+            "Long-term Land Surface Temperature daytime monthly stddev, October",
+            "Long-term Land Surface Temperature daytime monthly stddev, November",
+            "Long-term Land Surface Temperature daytime monthly stddev, December"
+        ],
+        "band_scale":
+        [
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02
+        ],
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "TUBerlin",
+        "PRODUCT": "BigEarthNet/v1",
+        "band_values":
+        [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "B8",
+            "B9",
+            "B10",
+            "B11",
+            "B12",
+            "B8A"
+        ],
+        "band_description":
+        [
+            "Aerosols",
+            "Blue",
+            "Green",
+            "Red",
+            "Red Edge 1",
+            "Red Edge 2",
+            "Red Edge 3",
+            "NIR",
+            "Water vapor",
+            "Cirrus",
+            "SWIR 1",
+            "SWIR 2",
+            "Red Edge 4"
+        ],
+        "band_scale":
+        [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "UMD",
+        "PRODUCT": "hansen/global_forest_change_2022_v1_10",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "UMT",
+        "PRODUCT": "NTSG/v2/LANDSAT/GPP",
+        "band_values":
+        [
+            "GPP"
+        ],
+        "band_description":
+        [
+            "16-day gross primary production"
+        ],
+        "band_scale":
+        [
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "UMT",
+        "PRODUCT": "NTSG/v2/LANDSAT/NPP",
+        "band_values":
+        [
+            "annualNPP"
+        ],
+        "band_description":
+        [
+            "Annual net primary production"
+        ],
+        "band_scale":
+        [
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "UMT",
+        "PRODUCT": "NTSG/v2/MODIS/GPP",
+        "band_values":
+        [
+            "GPP"
+        ],
+        "band_description":
+        [
+            "8-day gross primary production"
+        ],
+        "band_scale":
+        [
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "UMT",
+        "PRODUCT": "NTSG/v2/MODIS/NPP",
+        "band_values":
+        [
+            "annualNPP"
+        ],
+        "band_description":
+        [
+            "Annual net primary productivity"
+        ],
+        "band_scale":
+        [
+            0.0001
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "UQ",
+        "PRODUCT": "murray/Intertidal/v1_1/data_mask",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "USGS",
+        "PRODUCT": "GMTED2010",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "USGS",
+        "PRODUCT": "LIMA/MOSAIC",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "USGS",
+        "PRODUCT": "NLCD_RELEASES/2019_REL/RCMAP/V5/TRENDS",
+        "band_values":
+        [
+            "annual_herbaceous_linear_model_pvalue",
+            "bare_ground_linear_model_pvalue",
+            "herbaceous_linear_model_pvalue",
+            "litter_linear_model_pvalue",
+            "sagebrush_linear_model_pvalue",
+            "shrub_linear_model_pvalue",
+            "non_sagebrush_shrub_linear_model_pvalue",
+            "perennial_herbaceous_linear_model_pvalue",
+            "tree_linear_model_pvalue",
+            "annual_herbaceous_linear_model_slope",
+            "bare_ground_linear_model_slope",
+            "herbaceous_linear_model_slope",
+            "litter_linear_model_slope",
+            "sagebrush_linear_model_slope",
+            "shrub_linear_model_slope",
+            "non_sagebrush_shrub_linear_model_slope",
+            "perennial_herbaceous_linear_model_slope",
+            "tree_linear_model_slope"
+        ],
+        "band_description":
+        [
+            "P-value of linear trends model for annual herbaceous time series",
+            "P-value of linear trends model for bare ground time series",
+            "P-value of linear trends model for herbaceous time series",
+            "P-value of linear trends model for litter time series",
+            "P-value of linear trends model for sagebrush time series",
+            "P-value of linear trends model for shrub time series",
+            "P-value of linear trends model for non sagebrush shrub time series",
+            "P-value of linear trends model for perennial herbaceous time series",
+            "P-value of linear trends model for tree time series",
+            "Slope of linear trends model for annual herbaceous time series",
+            "Slope of linear trends model for bare ground time series",
+            "Slope of linear trends model for herbaceous time series",
+            "Slope of linear trends model for litter time series",
+            "Slope of linear trends model for sagebrush time series",
+            "Slope of linear trends model for shrub time series",
+            "Slope of linear trends model for non sagebrush shrub time series",
+            "Slope of linear trends model for perennial herbaceous time series",
+            "Slope of linear trends model for tree time series"
+        ],
+        "band_scale":
+        [
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "USGS",
+        "PRODUCT": "NLCD_RELEASES/2019_REL/RCMAP/V5/TRENDS_YEAR",
+        "band_values":
+        [
+            "annual_herbaceous_segment_pvalue",
+            "bare_ground_segment_pvalue",
+            "herbaceous_segment_pvalue",
+            "litter_segment_pvalue",
+            "sagebrush_segment_pvalue",
+            "shrub_segment_pvalue",
+            "non_sagebrush_shrub_segment_pvalue",
+            "perennial_herbaceous_segment_pvalue",
+            "tree_segment_pvalue",
+            "annual_herbaceous_segment_slope",
+            "bare_ground_segment_slope",
+            "herbaceous_segment_slope",
+            "litter_segment_slope",
+            "sagebrush_segment_slope",
+            "shrub_segment_slope",
+            "non_sagebrush_shrub_segment_slope",
+            "perennial_herbaceous_segment_slope",
+            "tree_segment_slope"
+        ],
+        "band_description":
+        [
+            "P-values of structural break segments within each component of\nannual herbaceous per year\n",
+            "P-values of structural break segments within each component of\nbare ground per year\n",
+            "P-values of structural break segments within each component of\nherbaceous per year\n",
+            "P-values of structural break segments within each component of\nlitter per year\n",
+            "P-values of structural break segments within each component of\nsagebrush per year\n",
+            "P-values of structural break segments within each component of\nshrub per year\n",
+            "P-values of structural break segments within each component of\nnon sagebrush shrub per year\n",
+            "P-values of structural break segments within each component of\nperennial herbaceous per year\n",
+            "P-values of structural break segments within each component of\ntree per year\n",
+            "Annual slope of structural break segments within each component of\nannual herbaceous\n",
+            "Annual slope of structural break segments within each component of\nbare ground\n",
+            "Annual slope of structural break segments within each component of\nherbaceous\n",
+            "Annual slope of structural break segments within each component of\nlitter\n",
+            "Annual slope of structural break segments within each component of\nsagebrush\n",
+            "Annual slope of structural break segments within each component of\nshrub\n",
+            "Annual slope of structural break segments within each component of\nnon sagebrush shrub\n",
+            "Annual slope of structural break segments within each component of\nperennial herbaceous\n",
+            "Annual slope of structural break segments within each component of\ntree\n"
+        ],
+        "band_scale":
+        [
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "gee_type": "image_collection"
+    },
+    {
+        "MISSION": "USGS",
+        "PRODUCT": "NLCD_RELEASES/2020_REL/NALCMS",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "USGS",
+        "PRODUCT": "SRTMGL1_003",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WRI",
+        "PRODUCT": "GFW/FORMA/alerts",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WRI",
+        "PRODUCT": "GFW/FORMA/thresholds",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level03",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level04",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level05",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level06",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level07",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level08",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level09",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level10",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level11",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroATLAS/v1/Basins/level12",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/03CONDEM",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/03DIR",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/03VFDEM",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/15ACC",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/15CONDEM",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/15DIR",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/30ACC",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/30CONDEM",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/30DIR",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "image"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_1",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_2",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_3",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_4",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_5",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_6",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_7",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_8",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_9",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_10",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_11",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/Basins/hybas_12",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    },
+    {
+        "MISSION": "WWF",
+        "PRODUCT": "HydroSHEDS/v1/FreeFlowingRivers",
+        "band_values": null,
+        "band_description": null,
+        "band_scale": null,
+        "gee_type": "table"
+    }
+]
