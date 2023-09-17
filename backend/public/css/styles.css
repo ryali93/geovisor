@@ -21,11 +21,14 @@ body, html, #container {
   #map-container {
     flex-grow: 1;
     height: 100%;
+    position: relative;
   }
   
   #map {
     width: 100%;
     height: 100%;
+    position: relative;
+
   }
   
 
@@ -253,3 +256,62 @@ input:focus ~ .bar:after {
 #toggleAdvanced:hover {
     background-color: #01579B;
 }
+
+
+/* Estilos de list layers */
+#layerList {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Asegurarte de que se muestre sobre el mapa */
+    background: rgba(255, 255, 255, 0.9); /* Aumentar la opacidad un poco para mejor legibilidad */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Agregar un poco de sombra para destacarlo */
+    max-height: 300px; /* Ajusta según tus necesidades */
+    overflow-y: auto;
+    font-size: 1rem; /* Tamaño de fuente consistente con otros elementos */
+    color: #424242; /* Color de fuente consistente con otros elementos */
+    width: 220px; /* Establecer un ancho para que se vea más ordenado */
+}
+
+#layerList h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem; /* Tamaño de fuente más grande para el título */
+    color: #0288D1; /* Color para hacer el título más destacado */
+    border-bottom: 1px solid #607D8B; /* Línea debajo del título para separarlo del contenido */
+    padding-bottom: 5px;
+}
+
+#layerUl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#layerUl li {
+    margin: 5px 0;
+    display: flex; /* Flexbox para alinear los elementos del listado */
+    justify-content: space-between;
+}
+
+#layerUl li label {
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    flex-grow: 1; /* Tomar el espacio restante */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Añadir un poco de margen a la casilla de verificación si la tienes */
+}
+
+#layerUl button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  

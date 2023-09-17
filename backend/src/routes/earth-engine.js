@@ -5,17 +5,12 @@ const e = require('express');
 
 router.get('/mapid', (req, res) => {
     const id = req.query.id;
-    const area = req.query.area;
+    const area_s = req.query.area;
     const bands_s = req.query.bands;
     const type = req.query.type;
     const scale_s = req.query.scale;
-    const start_date = req.query.start_date;
-    const end_date = req.query.end_date;
-
-    if (!area) {
-      res.status(400).send('Debe proporcionar el parámetro de área');
-      return;
-    }
+    const start_date_s = req.query.start_date;
+    const end_date_s = req.query.end_date;
 
     let scale
     if (!scale_s) {
@@ -24,35 +19,64 @@ router.get('/mapid', (req, res) => {
       scale = Number(scale_s);
     }
 
-    let geometry;
+    let area;
     try {
-      geometry = ee.Geometry.Polygon(JSON.parse(area));
+      area = ee.Geometry.Polygon(JSON.parse(area_s));
     } catch (error) {
       res.status(400).send('El parámetro de área no es válido');
       return;
     }
-    const bands = bands_s.split(","); //.slice(1, -1)
+    
+    let bands;
+    if (!bands_s) {
+      bands = [];
+    }else {
+      bands = bands_s.split(",");
+    }
+
+    let start_date;
+    if (!start_date_s) {
+      start_date = new Date('2019-01-01');
+    }else {
+      start_date = new Date(start_date_s);
+    }
+
+    let end_date;
+    if (!end_date_s) {
+      end_date = new Date('2020-01-01');
+    }else {
+      end_date = new Date(end_date_s);
+    }
+
+    // console.log("id: ", id);
+    // console.log("area: ", area);
+    // console.log("bands: ", bands);
+    // console.log("type: ", type);
+    // console.log("scale: ", scale);
+    // console.log("start_date: ", start_date);
+    // console.log("end_date: ", end_date);
 
     // Create a vizualization for bands selected with the min and max values
     viz = {min:0, max:0.3}
     if (type == "image") {
       var map_sr = ee.Image(id);
-      map_sr = map_sr.clip(geometry);
-      map_sr = map_sr.select(bands);
+      map_sr = map_sr.clip(area);
+      map_sr.getMap(viz, ({ urlFormat }) => res.send(urlFormat));
     } else if (type == "image_collection") {
-      var map_sr = ee.ImageCollection(id).filterBounds(geometry);
+      var map_sr = ee.ImageCollection(id).filterBounds(area);
       map_sr = map_sr.filterDate(start_date, end_date);
       map_sr = map_sr.mean();
-      map_sr = map_sr.clip(geometry);
+      map_sr = map_sr.clip(area);
       map_sr = map_sr.select(bands);
+      map_sr.multiply(scale).getMap(viz, ({ urlFormat }) => res.send(urlFormat));
     } else if (type == "table") {
       var map_sr = ee.FeatureCollection(id);
-      map_sr = map_sr.filterBounds(geometry);
+      map_sr = map_sr.filterBounds(area);
     } else if (type == "table_collection") {
       var map_sr = ee.FeatureCollection(id);
-      map_sr = map_sr.filterBounds(geometry);
+      map_sr = map_sr.filterBounds(area);
     }
-    map_sr.multiply(scale).getMap(viz, ({ urlFormat }) => res.send(urlFormat));
+    
 });
 
 router.get('/get-time-series', (req, res) => {

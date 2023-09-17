@@ -1,17 +1,71 @@
 //////////////////////////////////////////////////////////////////////
 // Initialize the map
 const map = new ol.Map({
-    target: 'map',
-    layers: [
-      new ol.layer.Tile({
-        source: new ol.source.OSM()
-      })
-    ],
-    view: new ol.View({
-      center: ol.proj.fromLonLat([-4.7240425, 39.7825346]),
-      zoom: 7
+  target: 'map',
+  layers: [
+    new ol.layer.Tile({
+      source: new ol.source.OSM()
     })
+  ],
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-4.7240425, 39.7825346]),
+    zoom: 7
+  })
+});
+
+// Function to update the list of layers
+function updateLayerList() {
+  const layerUl = document.getElementById('layerUl');
+  layerUl.innerHTML = ""; // Clear the current list
+
+  map.getLayers().forEach((layer, index) => {
+    const layerLi = document.createElement('li');
+
+    // Create an input field for the layer name
+    const layerNameInput = document.createElement('input');
+    layerNameInput.type = 'text';
+    layerNameInput.value = layer.get('name') || `Capa ${index}`;
+    layerNameInput.addEventListener('change', function() {
+      layer.set('name', this.value);
+      updateLayerList(); // Update the list to reflect the new name
+    });
+
+    // Create an input field for opacity
+    const opacityInput = document.createElement('input');
+    opacityInput.type = 'range';
+    opacityInput.min = 0;
+    opacityInput.max = 1;
+    opacityInput.step = 0.1;
+    opacityInput.value = layer.getOpacity();
+    opacityInput.addEventListener('input', function() {
+      layer.setOpacity(this.value);
+    });
+
+    // Create a delete button for the layer
+    const deleteButton = document.createElement('button');
+    deleteButton.innerHTML = 'X';
+    deleteButton.addEventListener('click', function() {
+      map.removeLayer(layer);
+      updateLayerList(); // Update the list after removal
+    });
+
+    // Append elements to the list item
+    layerLi.appendChild(layerNameInput);
+    layerLi.appendChild(opacityInput);
+    layerLi.appendChild(deleteButton);
+
+
+    // Append the list item to the list
+    layerUl.appendChild(layerLi);
   });
+}
+
+// Listen for changes to the layer collection and update the layer list
+map.getLayers().on(['add', 'remove'], updateLayerList);
+
+// Call the function once to initialize the layer list
+updateLayerList();
+
 
 //////////////////////////////////////////////////////////////////////
 // Toggle advanced options
@@ -154,6 +208,8 @@ document.getElementById('drawPolygon').addEventListener('click', function() {
 });
 document.getElementById('drawClear').addEventListener('click', function() {
   source.clear();
+  // Cancel the draw interaction
+  map.removeInteraction(draw);
 });
 
 //////////////////////////////////////////////////////////////////////
@@ -204,15 +260,15 @@ document.getElementById('getDataButton').addEventListener('click', async functio
     const type = relevantProduct.gee_type;
 
     // Show in console
-    console.log({
-      idName,
-      geometry: geometry ? geometry.getCoordinates() : null,
-      bands,
-      type,
-      scale,
-      startDate,
-      endDate
-    });
+    // console.log({
+    //   idName,
+    //   geometry: geometry ? geometry.getCoordinates() : null,
+    //   bands,
+    //   type,
+    //   scale,
+    //   startDate,
+    //   endDate
+    // });
 
     // Get the mapid
     // const mapid = await get_mapid(geometry);
@@ -250,3 +306,13 @@ const get_mapid = async (idName, geometry, bands, type, scale, start_date, end_d
   const data = await response.text(); 
   return data; 
 };
+
+
+const layers = map.getLayers().getArray();
+layers.forEach((layer, index) => {
+  console.log(`Capa ${index + 1}:`);
+  console.log('Tipo: ', layer.getType());
+  console.log('Visible: ', layer.getVisible());
+  // Agrega más propiedades aquí si es necesario
+});
+
